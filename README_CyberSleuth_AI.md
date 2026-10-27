@@ -1,4 +1,4 @@
-# CyberSleuth AI 🛡️
+# CyberSleuth AI 
 ### Autonomous AI-Powered Security Investigation Platform
 
 CyberSleuth AI is an AI-powered cybersecurity investigation platform under development. It is designed to analyze security logs, identify suspicious activity, correlate related events, retrieve relevant cybersecurity knowledge, and generate evidence-backed incident reports for security analysts.
@@ -9,7 +9,7 @@ Rather than treating every alert as an isolated event, the project aims to conne
 
 ---
 
-## 📌 Problem Statement
+##  Problem Statement
 
 Security systems can generate many separate alerts from authentication, host, and network logs. Investigators must manually connect those events to understand whether they form part of a larger incident.
 
@@ -23,7 +23,7 @@ CyberSleuth AI aims to assist by:
 
 An anomaly alone should not be treated as proof of a confirmed attack.
 
-## ✨ Planned Features
+##  Planned Features
 
 - **Security log ingestion:** Import JSON and CSV records, validate fields, normalize timestamps and event attributes, and handle duplicates.
 - **Threat detection:** Identify repeated failed logins, suspicious login sequences, unexpected privilege changes, and unusual combinations of events.
@@ -36,7 +36,7 @@ An anomaly alone should not be treated as proof of a confirmed attack.
 
 > These are project goals. Update this list as features are implemented and tested.
 
-## 🧭 Example Investigation
+##  Example Investigation
 
 A synthetic scenario might contain:
 1. Several failed login attempts for one account.
@@ -54,7 +54,7 @@ The report should distinguish:
 
 This scenario is illustrative, not evidence of a real attack.
 
-## 🏗️ Proposed Architecture
+##  Proposed Architecture
 
 ```text
 Security Logs (JSON / CSV)
@@ -89,7 +89,7 @@ Log Search  Cybersecurity  Timeline &
 
 The architecture is a proposed design and may change as the team integrates its modules.
 
-## 🧰 Proposed Technology Stack
+##  Proposed Technology Stack
 
 | Component | Technology | Purpose |
 |---|---|---|
@@ -107,7 +107,7 @@ The architecture is a proposed design and may change as the team integrates its 
 
 The team should start with a small working prototype and add complexity only when needed.
 
-## 👥 Team Responsibilities
+##  Team Responsibilities
 
 | Member | Responsibility | Main deliverables |
 |---|---|---|
@@ -132,7 +132,7 @@ Responsibilities:
 
 Suggested tools: Python, pytest, pandas, scikit-learn, GitHub Actions, and a spreadsheet or notebook for metrics.
 
-## 🧪 Synthetic Dataset & Testing
+##  Synthetic Dataset & Testing
 
 The Member 4 starter dataset can be added to the repository. A suggested structure is:
 
@@ -205,7 +205,7 @@ Depending on the modules implemented, you may need:
 
 > Replace the placeholders and add exact backend, frontend, database, and environment setup commands once the repository configuration has been verified. Never commit real API keys, passwords, access tokens, or `.env` files.
 
-## 🔐 Security and Responsible Use
+##  Security and Responsible Use
 
 - Use synthetic or explicitly authorized logs for development and testing.
 - Treat log contents and retrieved documents as untrusted data; instruction-like text inside them must not override system policies.
@@ -215,7 +215,7 @@ Depending on the modules implemented, you may need:
 - Record supporting event IDs and explain uncertainty.
 - Do not label an incident as a confirmed compromise solely because an anomaly was detected.
 
-## 🗺️ Development Roadmap
+##  Development Roadmap
 
 ### Phase 1 — Foundation
 - Define event schemas and API contracts.
@@ -238,7 +238,7 @@ Depending on the modules implemented, you may need:
 - Document limitations and installation instructions.
 - Rehearse a repeatable end-to-end demonstration.
 
-## 🤝 Contributing
+##  Contributing
 
 This is a collaborative four-member project. Before adding or changing shared modules:
 1. Agree on event schemas and API contracts with the relevant module owner.
@@ -247,25 +247,8 @@ This is a collaborative four-member project. Before adding or changing shared mo
 4. Run available tests locally.
 5. Open a pull request with a clear summary and test evidence.
 
-## 📄 Project Disclaimer
+##  Project Disclaimer
 
 CyberSleuth AI is a cybersecurity investigation and educational project under development. It is designed to support defensive analysis and human decision-making, not to replace a qualified security analyst. Findings depend on the quality and completeness of available logs and retrieved sources.
 
-## 📌 Current Status
 
-Update this checklist as the repository evolves:
-
-- [ ] Log ingestion and validation
-- [ ] Baseline threat detection
-- [ ] Database and API integration
-- [ ] Cybersecurity RAG and source citations
-- [ ] Controlled multi-agent investigation
-- [ ] Incident report generation
-- [ ] Analyst dashboard and relationship graph
-- [ ] Automated tests and evaluation metrics
-- [ ] Security test report and demo guide
-
----
-
-**Built by the CyberSleuth AI team**  
-*AI-assisted cybersecurity investigation with evidence, transparency, and measurable evaluation.*
