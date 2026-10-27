@@ -22,11 +22,6 @@ A small, deterministic starter dataset for defensive testing of CyberSleuth AI. 
 * `adversarial\\\_input\\\_events.json`: instruction-like text embedded in a log.
 * `scenario\\\_definitions.json`: scenario descriptions and expected outcomes.
 
-## Important implementation note
-
-Agree the schema with Member 2 before integrating. In particular, `SCN007` has an intentionally malformed timestamp, `SCN008` contains a duplicate event ID, and `SCN012` is missing `event\\\_type`. These are deliberate test fixtures; do not silently repair them in the raw test data.
-
-## Suggested next steps
 
 1. Run schema/ingestion tests against the invalid input scenarios.
 2. Connect the valid scenarios to the actual detection function/API.
