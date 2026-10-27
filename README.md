@@ -1,5 +1,7 @@
 CyberSleuth AI 🛡️
+
 Autonomous AI-Powered Security Investigation Platform
+
 CyberSleuth AI is an AI-powered cybersecurity investigation platform under development. It is designed to analyze security logs, identify suspicious activity, correlate related events, retrieve relevant cybersecurity knowledge, and generate evidence-backed incident reports for security analysts.
 
 Rather than treating every alert as an isolated event, the project aims to connect activity across accounts, devices, IP addresses, and timelines to help analysts investigate possible attack sequences.
