@@ -1,0 +1,204 @@
+{
+  "timestamp": "2026-10-27T17:34:39.071961Z",
+  "detection_metrics": {
+    "precision": 1.0,
+    "recall": 0.7442,
+    "f1_score": 0.8533,
+    "false_positive_rate": 0.0,
+    "confusion_matrix": {
+      "true_positives": 64,
+      "false_positives": 0,
+      "true_negatives": 187,
+      "false_negatives": 22
+    }
+  },
+  "rag_metrics": {
+    "precision@3": 0.5,
+    "recall@3": 0.675,
+    "mrr": 0.775,
+    "ndcg@3": 0.6799,
+    "total_queries_evaluated": 20
+  },
+  "investigation_metrics": {
+    "completion_rate": 1.0,
+    "evidence_coverage": 1.0,
+    "mitre_technique_accuracy": 0.641,
+    "uncertainty_expression_rate": 1.0
+  },
+  "scenario_results": {
+    "SCN001": {
+      "name": "Normal successful login",
+      "ground_truth": "benign",
+      "passed": true,
+      "alerts_triggered": 0
+    },
+    "SCN002": {
+      "name": "Repeated failed logins",
+      "ground_truth": "suspicious",
+      "passed": true,
+      "alerts_triggered": 1
+    },
+    "SCN003": {
+      "name": "Failed logins followed by success",
+      "ground_truth": "suspicious",
+      "passed": true,
+      "alerts_triggered": 2
+    },
+    "SCN004": {
+      "name": "Authorized privilege change",
+      "ground_truth": "benign",
+      "passed": true,
+      "alerts_triggered": 0
+    },
+    "SCN005": {
+      "name": "Unapproved privilege change",
+      "ground_truth": "suspicious",
+      "passed": true,
+      "alerts_triggered": 1
+    },
+    "SCN006": {
+      "name": "Suspicious outbound connection",
+      "ground_truth": "suspicious",
+      "passed": true,
+      "alerts_triggered": 1
+    },
+    "SCN007": {
+      "name": "Invalid timestamp",
+      "ground_truth": "invalid_input",
+      "passed": true,
+      "alerts_triggered": 0
+    },
+    "SCN008": {
+      "name": "Duplicate event",
+      "ground_truth": "invalid_input",
+      "passed": true,
+      "alerts_triggered": 0
+    },
+    "SCN009": {
+      "name": "Benign unusual-hour login",
+      "ground_truth": "benign",
+      "passed": true,
+      "alerts_triggered": 0
+    },
+    "SCN010": {
+      "name": "Prompt injection inside log",
+      "ground_truth": "adversarial_input",
+      "passed": true,
+      "alerts_triggered": 0
+    },
+    "SCN011": {
+      "name": "Correlated suspicious sequence",
+      "ground_truth": "suspicious",
+      "passed": true,
+      "alerts_triggered": 4
+    },
+    "SCN012": {
+      "name": "Missing required field",
+      "ground_truth": "invalid_input",
+      "passed": true,
+      "alerts_triggered": 0
+    },
+    "SCN013": {
+      "name": "Routine workday activity",
+      "ground_truth": "benign",
+      "passed": true,
+      "alerts_triggered": 0
+    },
+    "SCN014": {
+      "name": "VPN remote work activity",
+      "ground_truth": "benign",
+      "passed": true,
+      "alerts_triggered": 0
+    },
+    "SCN015": {
+      "name": "Scheduled maintenance and updates",
+      "ground_truth": "benign",
+      "passed": true,
+      "alerts_triggered": 0
+    },
+    "SCN016": {
+      "name": "Normal password rotation and MFA",
+      "ground_truth": "benign",
+      "passed": true,
+      "alerts_triggered": 0
+    },
+    "SCN017": {
+      "name": "Authorized admin operations",
+      "ground_truth": "benign",
+      "passed": true,
+      "alerts_triggered": 0
+    },
+    "SCN018": {
+      "name": "End-of-day logout pattern",
+      "ground_truth": "benign",
+      "passed": true,
+      "alerts_triggered": 0
+    },
+    "SCN019": {
+      "name": "Lateral movement across hosts",
+      "ground_truth": "suspicious",
+      "passed": true,
+      "alerts_triggered": 1
+    },
+    "SCN020": {
+      "name": "Data exfiltration over external channel",
+      "ground_truth": "suspicious",
+      "passed": true,
+      "alerts_triggered": 4
+    },
+    "SCN021": {
+      "name": "Credential stuffing campaign",
+      "ground_truth": "suspicious",
+      "passed": true,
+      "alerts_triggered": 1
+    },
+    "SCN022": {
+      "name": "Insider threat with log tampering",
+      "ground_truth": "suspicious",
+      "passed": true,
+      "alerts_triggered": 1
+    },
+    "SCN023": {
+      "name": "Service account abuse",
+      "ground_truth": "suspicious",
+      "passed": true,
+      "alerts_triggered": 1
+    },
+    "SCN024": {
+      "name": "DNS tunneling indicators",
+      "ground_truth": "suspicious",
+      "passed": true,
+      "alerts_triggered": 1
+    },
+    "SCN025": {
+      "name": "Impossible travel authentication",
+      "ground_truth": "suspicious",
+      "passed": true,
+      "alerts_triggered": 1
+    },
+    "SCN026": {
+      "name": "Account lockout threshold evasion",
+      "ground_truth": "suspicious",
+      "passed": true,
+      "alerts_triggered": 1
+    },
+    "SCN027": {
+      "name": "Baseline normal operations",
+      "ground_truth": "benign",
+      "passed": true,
+      "alerts_triggered": 0
+    },
+    "SCN028": {
+      "name": "Edge cases and boundary inputs",
+      "ground_truth": "edge_case",
+      "passed": true,
+      "alerts_triggered": 0
+    },
+    "SCN029": {
+      "name": "Adversarial prompt injection battery",
+      "ground_truth": "adversarial_input",
+      "passed": true,
+      "alerts_triggered": 0
+    }
+  }
+}

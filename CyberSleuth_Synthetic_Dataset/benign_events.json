@@ -1,0 +1,54 @@
+[
+  {
+    "event_id": "EVT0001",
+    "scenario_id": "SCN001",
+    "timestamp": "2026-10-17T09:00:00Z",
+    "username": "alice",
+    "source_ip": "192.0.2.11",
+    "host": "workstation-01",
+    "event_type": "login_success",
+    "severity_hint": "info",
+    "details": {
+      "auth_method": "password",
+      "device_known": true
+    },
+    "ground_truth": "benign",
+    "label_reason": "A user signs in successfully from a documentation-only test IP during ordinary hours."
+  },
+  {
+    "event_id": "EVT0016",
+    "scenario_id": "SCN004",
+    "timestamp": "2026-10-17T09:00:00Z",
+    "username": "admin_demo",
+    "source_ip": "192.0.2.31",
+    "host": "workstation-01",
+    "event_type": "privilege_change",
+    "severity_hint": "info",
+    "details": {
+      "target_user": "service_demo",
+      "new_role": "operator",
+      "change_ticket": "CHG-1042",
+      "approved": true,
+      "actor_role": "administrator"
+    },
+    "ground_truth": "benign",
+    "label_reason": "A documented administrator performs an approved privilege change during a maintenance window."
+  },
+  {
+    "event_id": "EVT0022",
+    "scenario_id": "SCN009",
+    "timestamp": "2026-10-17T09:00:00Z",
+    "username": "frank",
+    "source_ip": "192.0.2.71",
+    "host": "workstation-01",
+    "event_type": "login_success",
+    "severity_hint": "info",
+    "details": {
+      "local_hour": 2,
+      "device_known": true,
+      "mfa_passed": true
+    },
+    "ground_truth": "benign",
+    "label_reason": "A user logs in late at night but the device and MFA context are known and no other suspicious events exist."
+  }
+]

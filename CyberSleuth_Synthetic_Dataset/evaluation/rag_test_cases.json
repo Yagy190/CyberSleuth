@@ -1,0 +1,162 @@
+[
+  {
+    "test_id": "RAG_TC_001",
+    "query": "What MITRE ATT&CK technique describes brute force password attacks?",
+    "category": "technique_identification",
+    "difficulty": "easy",
+    "expected_technique_ids": ["T1110", "T1110.001"],
+    "expected_keywords": ["brute force", "password guessing", "credential access"]
+  },
+  {
+    "test_id": "RAG_TC_002",
+    "query": "How can an attacker evade account lockout policies during credential access?",
+    "category": "technique_identification",
+    "difficulty": "medium",
+    "expected_technique_ids": ["T1110.001", "T1110.003"],
+    "expected_keywords": ["password spraying", "slow brute force", "lockout threshold"]
+  },
+  {
+    "test_id": "RAG_TC_003",
+    "query": "What technique covers unauthorized escalation using local admin privileges?",
+    "category": "technique_identification",
+    "difficulty": "medium",
+    "expected_technique_ids": ["T1548", "T1078.003"],
+    "expected_keywords": ["privilege escalation", "elevation control", "administrator role"]
+  },
+  {
+    "test_id": "RAG_TC_004",
+    "query": "What MITRE technique describes attackers moving across hosts using Remote Desktop Protocol?",
+    "category": "technique_identification",
+    "difficulty": "easy",
+    "expected_technique_ids": ["T1021", "T1021.001"],
+    "expected_keywords": ["remote desktop", "lateral movement", "RDP"]
+  },
+  {
+    "test_id": "RAG_TC_005",
+    "query": "Which technique identifies command and control covert communication using DNS TXT queries?",
+    "category": "technique_identification",
+    "difficulty": "hard",
+    "expected_technique_ids": ["T1071", "T1071.004"],
+    "expected_keywords": ["DNS tunneling", "application layer protocol", "covert channel"]
+  },
+  {
+    "test_id": "RAG_TC_006",
+    "query": "What technique describes exfiltration of confidential intellectual property over web channels?",
+    "category": "technique_identification",
+    "difficulty": "medium",
+    "expected_technique_ids": ["T1041", "T1567"],
+    "expected_keywords": ["exfiltration", "C2 channel", "data egress"]
+  },
+  {
+    "test_id": "RAG_TC_007",
+    "query": "How do adversaries extract Active Directory NTDS.dit password hashes?",
+    "category": "technique_identification",
+    "difficulty": "hard",
+    "expected_technique_ids": ["T1003", "T1003.003"],
+    "expected_keywords": ["credential dumping", "NTDS", "shadow copy"]
+  },
+  {
+    "test_id": "RAG_TC_008",
+    "query": "What technique identifies attackers clearing local system audit logs to hide tracks?",
+    "category": "technique_identification",
+    "difficulty": "easy",
+    "expected_technique_ids": ["T1070", "T1070.001"],
+    "expected_keywords": ["clear event logs", "indicator removal", "defense evasion"]
+  },
+  {
+    "test_id": "RAG_TC_009",
+    "query": "What are the immediate incident response procedures for confirmed credential stuffing?",
+    "category": "incident_response",
+    "difficulty": "medium",
+    "expected_technique_ids": ["T1110.004"],
+    "expected_keywords": ["force password reset", "block source IP", "revoke sessions", "enable MFA"]
+  },
+  {
+    "test_id": "RAG_TC_010",
+    "query": "What containment steps should a SOC analyst take when lateral movement is detected?",
+    "category": "incident_response",
+    "difficulty": "medium",
+    "expected_technique_ids": ["T1021"],
+    "expected_keywords": ["isolate host", "disable compromised account", "kill RDP sessions"]
+  },
+  {
+    "test_id": "RAG_TC_011",
+    "query": "What actions should be executed when unauthorized privilege changes occur on critical servers?",
+    "category": "incident_response",
+    "difficulty": "medium",
+    "expected_technique_ids": ["T1548"],
+    "expected_keywords": ["revert permissions", "audit active sessions", "cross-reference change ticket"]
+  },
+  {
+    "test_id": "RAG_TC_012",
+    "query": "What is the recommended playbook response for high-volume data exfiltration in progress?",
+    "category": "incident_response",
+    "difficulty": "hard",
+    "expected_technique_ids": ["T1041"],
+    "expected_keywords": ["sever network connection", "firewall egress block", "preserve network pcaps"]
+  },
+  {
+    "test_id": "RAG_TC_013",
+    "query": "How should an incident responder investigate impossible travel alert anomalies?",
+    "category": "incident_response",
+    "difficulty": "medium",
+    "expected_technique_ids": ["T1078"],
+    "expected_keywords": ["verify ISP", "check corporate VPN overlap", "prompt user for MFA verification"]
+  },
+  {
+    "test_id": "RAG_TC_014",
+    "query": "What detection signatures can identify repeated password guessing attempts in SIEM logs?",
+    "category": "detection_guidance",
+    "difficulty": "easy",
+    "expected_technique_ids": ["T1110"],
+    "expected_keywords": ["Event ID 4625", "failure code", "threshold counting", "time window"]
+  },
+  {
+    "test_id": "RAG_TC_015",
+    "query": "How can security monitoring identify DNS tunneling queries before data loss?",
+    "category": "detection_guidance",
+    "difficulty": "hard",
+    "expected_technique_ids": ["T1071.004"],
+    "expected_keywords": ["Shannon entropy", "TXT record volume", "unusual subdomains"]
+  },
+  {
+    "test_id": "RAG_TC_016",
+    "query": "What behavioral heuristics detect insider unauthorized file collection via USB?",
+    "category": "detection_guidance",
+    "difficulty": "medium",
+    "expected_technique_ids": ["T1530", "T1070"],
+    "expected_keywords": ["Event ID 2003", "removable media mount", "bulk copy out of role"]
+  },
+  {
+    "test_id": "RAG_TC_017",
+    "query": "How can anomalous interactive logons by automated service accounts be monitored?",
+    "category": "detection_guidance",
+    "difficulty": "medium",
+    "expected_technique_ids": ["T1078.001"],
+    "expected_keywords": ["logon type 2", "interactive desktop", "service principal name"]
+  },
+  {
+    "test_id": "RAG_TC_018",
+    "query": "What mitigations prevent automated brute force and credential stuffing attacks?",
+    "category": "mitigation",
+    "difficulty": "easy",
+    "expected_technique_ids": ["T1110"],
+    "expected_keywords": ["multi-factor authentication", "CAPTCHA", "IP reputation rate limiting"]
+  },
+  {
+    "test_id": "RAG_TC_019",
+    "query": "What architectural controls prevent internal workstation lateral movement via SMB and RDP?",
+    "category": "mitigation",
+    "difficulty": "medium",
+    "expected_technique_ids": ["T1021"],
+    "expected_keywords": ["host-based firewall", "network segmentation", "disable remote desktop"]
+  },
+  {
+    "test_id": "RAG_TC_020",
+    "query": "What defenses protect Active Directory database from shadow copy extraction?",
+    "category": "mitigation",
+    "difficulty": "hard",
+    "expected_technique_ids": ["T1003.003"],
+    "expected_keywords": ["domain controller isolation", "tier 0 administration", "LAPS"]
+  }
+]

@@ -1,0 +1,61 @@
+[
+  {
+    "event_id": "EVT0020",
+    "scenario_id": "SCN007",
+    "timestamp": "not-a-timestamp",
+    "username": "dana",
+    "source_ip": "192.0.2.51",
+    "host": "workstation-01",
+    "event_type": "login_success",
+    "severity_hint": "info",
+    "details": {
+      "raw_timestamp": "not-a-timestamp"
+    },
+    "ground_truth": "invalid_input",
+    "label_reason": "A record has an invalid timestamp and should fail validation or be quarantined."
+  },
+  {
+    "event_id": "EVT0021",
+    "scenario_id": "SCN008",
+    "timestamp": "2026-10-17T09:00:00Z",
+    "username": "erin",
+    "source_ip": "192.0.2.61",
+    "host": "workstation-01",
+    "event_type": "login_failed",
+    "severity_hint": "info",
+    "details": {
+      "reason": "invalid_password"
+    },
+    "ground_truth": "invalid_input",
+    "label_reason": "The same event is submitted twice with the same event_id."
+  },
+  {
+    "event_id": "EVT0021",
+    "scenario_id": "SCN008",
+    "timestamp": "2026-10-17T09:00:00Z",
+    "username": "erin",
+    "source_ip": "192.0.2.61",
+    "host": "workstation-01",
+    "event_type": "login_failed",
+    "severity_hint": "info",
+    "details": {
+      "reason": "invalid_password"
+    },
+    "ground_truth": "invalid_input",
+    "label_reason": "The same event is submitted twice with the same event_id."
+  },
+  {
+    "event_id": "EVT0030",
+    "scenario_id": "SCN012",
+    "timestamp": "2026-10-17T09:00:00Z",
+    "username": "hank",
+    "source_ip": "192.0.2.101",
+    "host": "workstation-01",
+    "severity_hint": "info",
+    "details": {
+      "device_known": true
+    },
+    "ground_truth": "invalid_input",
+    "label_reason": "A log event is missing event_type and should fail schema validation."
+  }
+]
