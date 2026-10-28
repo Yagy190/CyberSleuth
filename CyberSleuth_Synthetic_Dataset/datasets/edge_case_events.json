@@ -1,0 +1,237 @@
+[
+  {
+    "event_id": "EVT0300",
+    "scenario_id": "SCN028",
+    "timestamp": "2026-10-20T00:00:00Z",
+    "username": "midnight_operator",
+    "source_ip": "192.0.2.15",
+    "host": "workstation-01",
+    "event_type": "login_success",
+    "severity_hint": "info",
+    "details": {
+      "note": "Exact midnight UTC boundary timestamp"
+    },
+    "ground_truth": "edge_case",
+    "label_reason": "Boundary test: 00:00:00Z timestamp handling."
+  },
+  {
+    "event_id": "EVT0301",
+    "scenario_id": "SCN028",
+    "timestamp": "2026-10-20T12:00:00Z",
+    "username": "a",
+    "source_ip": "192.0.2.16",
+    "host": "workstation-01",
+    "event_type": "login_success",
+    "severity_hint": "info",
+    "details": {
+      "note": "Single character username"
+    },
+    "ground_truth": "edge_case",
+    "label_reason": "Boundary test: minimum length 1-character username."
+  },
+  {
+    "event_id": "EVT0302",
+    "scenario_id": "SCN028",
+    "timestamp": "2026-10-20T12:01:00Z",
+    "username": "user_with_maximum_allowable_field_length_64_characters_padding_xyz_1234567890",
+    "source_ip": "192.0.2.17",
+    "host": "workstation-01",
+    "event_type": "login_success",
+    "severity_hint": "info",
+    "details": {
+      "length": 76
+    },
+    "ground_truth": "edge_case",
+    "label_reason": "Boundary test: long username string handling without buffer overflow."
+  },
+  {
+    "event_id": "EVT0303",
+    "scenario_id": "SCN028",
+    "timestamp": "2026-10-20T12:02:00Z",
+    "username": "alice",
+    "source_ip": "192.0.2.18",
+    "host": "srv-db-prod-cluster-01-node-alpha",
+    "event_type": "login_success",
+    "severity_hint": "info",
+    "details": {
+      "note": "Hyphenated complex hostname with multiple tokens"
+    },
+    "ground_truth": "edge_case",
+    "label_reason": "Boundary test: long complex hostname syntax parsing."
+  },
+  {
+    "event_id": "EVT0304",
+    "scenario_id": "SCN028",
+    "timestamp": "2026-10-20T12:03:00Z",
+    "username": "alice",
+    "source_ip": "192.0.2.254",
+    "host": "workstation-01",
+    "event_type": "login_success",
+    "severity_hint": "info",
+    "details": {
+      "note": "Subnet upper broadcast border test IP"
+    },
+    "ground_truth": "edge_case",
+    "label_reason": "Boundary test: /24 CIDR boundary IP parsing (192.0.2.254)."
+  },
+  {
+    "event_id": "EVT0305",
+    "scenario_id": "SCN028",
+    "timestamp": "2026-10-20T12:04:00Z",
+    "username": "alice",
+    "source_ip": "192.0.2.19",
+    "host": "workstation-01",
+    "event_type": "login_success",
+    "severity_hint": "info",
+    "details": {},
+    "ground_truth": "edge_case",
+    "label_reason": "Boundary test: empty details dictionary object."
+  },
+  {
+    "event_id": "EVT0306",
+    "scenario_id": "SCN028",
+    "timestamp": "2026-10-20T12:05:00Z",
+    "username": "alice",
+    "source_ip": "192.0.2.20",
+    "host": "workstation-01",
+    "event_type": "login_success",
+    "severity_hint": "info",
+    "details": {
+      "level1": {
+        "level2": {
+          "level3": {
+            "deep_key": "valid_value",
+            "depth": 3
+          }
+        }
+      }
+    },
+    "ground_truth": "edge_case",
+    "label_reason": "Boundary test: deeply nested details JSON structure."
+  },
+  {
+    "event_id": "EVT0307",
+    "scenario_id": "SCN028",
+    "timestamp": "2026-10-20T12:06:00Z",
+    "username": "alice",
+    "source_ip": "192.0.2.21",
+    "host": "workstation-01",
+    "event_type": "login_success",
+    "severity_hint": "info",
+    "details": {
+      "auth_method": "smartcard",
+      "device_known": true,
+      "session_id": "full_optional_fields_present",
+      "geo_ip": "Internal",
+      "risk_score": 0.05,
+      "correlation_id": "c_882910394"
+    },
+    "ground_truth": "edge_case",
+    "label_reason": "Boundary test: event record with exhaustive optional attributes populated."
+  },
+  {
+    "event_id": "EVT0308",
+    "scenario_id": "SCN028",
+    "timestamp": "2026-12-31T23:59:59Z",
+    "username": "alice",
+    "source_ip": "192.0.2.22",
+    "host": "workstation-01",
+    "event_type": "login_success",
+    "severity_hint": "info",
+    "details": {
+      "note": "Calendar year-end rollover boundary"
+    },
+    "ground_truth": "edge_case",
+    "label_reason": "Boundary test: year-end 23:59:59Z leap/rollover timestamp."
+  },
+  {
+    "event_id": "EVT0309",
+    "scenario_id": "SCN028",
+    "timestamp": "2026-10-20T12:08:00Z",
+    "username": "john.doe_jr@domain-sub.corp",
+    "source_ip": "192.0.2.23",
+    "host": "workstation-01",
+    "event_type": "login_success",
+    "severity_hint": "info",
+    "details": {
+      "format": "user_principal_name"
+    },
+    "ground_truth": "edge_case",
+    "label_reason": "Boundary test: UPN format username containing dots, underscores, and @ symbol."
+  },
+  {
+    "event_id": "EVT0310",
+    "scenario_id": "SCN028",
+    "timestamp": "2026-10-20T12:09:00Z",
+    "username": "user_a",
+    "source_ip": "192.0.2.24",
+    "host": "workstation-01",
+    "event_type": "login_success",
+    "severity_hint": "info",
+    "details": {
+      "collision_pair": 1
+    },
+    "ground_truth": "edge_case",
+    "label_reason": "Boundary test: concurrent identical timestamp race condition handling (peer 1)."
+  },
+  {
+    "event_id": "EVT0311",
+    "scenario_id": "SCN028",
+    "timestamp": "2026-10-20T12:09:00Z",
+    "username": "user_b",
+    "source_ip": "192.0.2.25",
+    "host": "workstation-02",
+    "event_type": "login_success",
+    "severity_hint": "info",
+    "details": {
+      "collision_pair": 2
+    },
+    "ground_truth": "edge_case",
+    "label_reason": "Boundary test: concurrent identical timestamp race condition handling (peer 2)."
+  },
+  {
+    "event_id": "EVT0312",
+    "scenario_id": "SCN028",
+    "timestamp": "2026-10-20T12:10:00Z",
+    "username": "alice",
+    "source_ip": "203.0.113.254",
+    "host": "workstation-01",
+    "event_type": "login_success",
+    "severity_hint": "info",
+    "details": {
+      "note": "Test net 3 max address"
+    },
+    "ground_truth": "edge_case",
+    "label_reason": "Boundary test: documentation TEST-NET-3 upper boundary IP address."
+  },
+  {
+    "event_id": "EVT0313",
+    "scenario_id": "SCN028",
+    "timestamp": "2026-10-20T12:11:00Z",
+    "username": "alice",
+    "source_ip": "192.0.2.26",
+    "host": "workstation-01",
+    "event_type": "login_success",
+    "severity_hint": "critical",
+    "details": {
+      "unusual_severity": true
+    },
+    "ground_truth": "edge_case",
+    "label_reason": "Boundary test: normal login event marked with non-standard 'critical' severity hint."
+  },
+  {
+    "event_id": "EVT0314",
+    "scenario_id": "SCN028",
+    "timestamp": "2026-10-20T12:12:00Z",
+    "username": "alice",
+    "source_ip": "192.0.2.27",
+    "host": "workstation-01",
+    "event_type": "login_success",
+    "severity_hint": "info",
+    "details": {
+      "note": "Long string field validation"
+    },
+    "ground_truth": "edge_case",
+    "label_reason": "Boundary test: extensive verbose description text string verifying parser robustness against multi-sentence paragraph content in audit log fields without truncation or parsing errors."
+  }
+]

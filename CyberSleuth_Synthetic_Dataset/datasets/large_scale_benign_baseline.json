@@ -1,0 +1,1642 @@
+[
+  {
+    "event_id": "EVT0200",
+    "scenario_id": "SCN027",
+    "timestamp": "2026-10-20T08:00:00Z",
+    "username": "baseline_user_01",
+    "source_ip": "192.0.2.11",
+    "host": "workstation-01",
+    "event_type": "login_success",
+    "severity_hint": "info",
+    "details": {
+      "auth_method": "kerberos",
+      "device_known": true,
+      "mfa_verified": true
+    },
+    "ground_truth": "benign",
+    "label_reason": "Baseline control group routine workstation logon."
+  },
+  {
+    "event_id": "EVT0201",
+    "scenario_id": "SCN027",
+    "timestamp": "2026-10-20T09:30:15Z",
+    "username": "baseline_user_01",
+    "source_ip": "192.0.2.11",
+    "host": "workstation-01",
+    "event_type": "file_access",
+    "severity_hint": "info",
+    "details": {
+      "file_path": "/docs/team_share/weekly_memo_1.pdf",
+      "action": "read"
+    },
+    "ground_truth": "benign",
+    "label_reason": "Baseline control group routine file access."
+  },
+  {
+    "event_id": "EVT0202",
+    "scenario_id": "SCN027",
+    "timestamp": "2026-10-20T11:15:00Z",
+    "username": "baseline_user_01",
+    "source_ip": "192.0.2.11",
+    "host": "workstation-01",
+    "event_type": "session_start",
+    "severity_hint": "info",
+    "details": {
+      "app_name": "SpreadsheetEditor",
+      "process_id": 4121
+    },
+    "ground_truth": "benign",
+    "label_reason": "Baseline control group standard office productivity application launch."
+  },
+  {
+    "event_id": "EVT0203",
+    "scenario_id": "SCN027",
+    "timestamp": "2026-10-20T14:45:20Z",
+    "username": "baseline_user_01",
+    "source_ip": "192.0.2.11",
+    "host": "workstation-01",
+    "event_type": "outbound_connection",
+    "severity_hint": "info",
+    "details": {
+      "destination_ip": "192.0.2.1",
+      "port": 443,
+      "connection_count": 2
+    },
+    "ground_truth": "benign",
+    "label_reason": "Baseline control group expected internal web server communication."
+  },
+  {
+    "event_id": "EVT0204",
+    "scenario_id": "SCN027",
+    "timestamp": "2026-10-20T17:00:00Z",
+    "username": "baseline_user_01",
+    "source_ip": "192.0.2.11",
+    "host": "workstation-01",
+    "event_type": "logout",
+    "severity_hint": "info",
+    "details": {
+      "session_type": "console",
+      "clean_shutdown": true
+    },
+    "ground_truth": "benign",
+    "label_reason": "Baseline control group routine workstation sign-off."
+  },
+  {
+    "event_id": "EVT0205",
+    "scenario_id": "SCN027",
+    "timestamp": "2026-10-20T08:00:00Z",
+    "username": "baseline_user_02",
+    "source_ip": "192.0.2.12",
+    "host": "workstation-02",
+    "event_type": "login_success",
+    "severity_hint": "info",
+    "details": {
+      "auth_method": "kerberos",
+      "device_known": true,
+      "mfa_verified": true
+    },
+    "ground_truth": "benign",
+    "label_reason": "Baseline control group routine workstation logon."
+  },
+  {
+    "event_id": "EVT0206",
+    "scenario_id": "SCN027",
+    "timestamp": "2026-10-20T09:30:15Z",
+    "username": "baseline_user_02",
+    "source_ip": "192.0.2.12",
+    "host": "workstation-02",
+    "event_type": "file_access",
+    "severity_hint": "info",
+    "details": {
+      "file_path": "/docs/team_share/weekly_memo_2.pdf",
+      "action": "read"
+    },
+    "ground_truth": "benign",
+    "label_reason": "Baseline control group routine file access."
+  },
+  {
+    "event_id": "EVT0207",
+    "scenario_id": "SCN027",
+    "timestamp": "2026-10-20T11:15:00Z",
+    "username": "baseline_user_02",
+    "source_ip": "192.0.2.12",
+    "host": "workstation-02",
+    "event_type": "session_start",
+    "severity_hint": "info",
+    "details": {
+      "app_name": "SpreadsheetEditor",
+      "process_id": 4122
+    },
+    "ground_truth": "benign",
+    "label_reason": "Baseline control group standard office productivity application launch."
+  },
+  {
+    "event_id": "EVT0208",
+    "scenario_id": "SCN027",
+    "timestamp": "2026-10-20T14:45:20Z",
+    "username": "baseline_user_02",
+    "source_ip": "192.0.2.12",
+    "host": "workstation-02",
+    "event_type": "outbound_connection",
+    "severity_hint": "info",
+    "details": {
+      "destination_ip": "192.0.2.1",
+      "port": 443,
+      "connection_count": 2
+    },
+    "ground_truth": "benign",
+    "label_reason": "Baseline control group expected internal web server communication."
+  },
+  {
+    "event_id": "EVT0209",
+    "scenario_id": "SCN027",
+    "timestamp": "2026-10-20T17:00:00Z",
+    "username": "baseline_user_02",
+    "source_ip": "192.0.2.12",
+    "host": "workstation-02",
+    "event_type": "logout",
+    "severity_hint": "info",
+    "details": {
+      "session_type": "console",
+      "clean_shutdown": true
+    },
+    "ground_truth": "benign",
+    "label_reason": "Baseline control group routine workstation sign-off."
+  },
+  {
+    "event_id": "EVT0210",
+    "scenario_id": "SCN027",
+    "timestamp": "2026-10-20T08:00:00Z",
+    "username": "baseline_user_03",
+    "source_ip": "192.0.2.13",
+    "host": "workstation-03",
+    "event_type": "login_success",
+    "severity_hint": "info",
+    "details": {
+      "auth_method": "kerberos",
+      "device_known": true,
+      "mfa_verified": true
+    },
+    "ground_truth": "benign",
+    "label_reason": "Baseline control group routine workstation logon."
+  },
+  {
+    "event_id": "EVT0211",
+    "scenario_id": "SCN027",
+    "timestamp": "2026-10-20T09:30:15Z",
+    "username": "baseline_user_03",
+    "source_ip": "192.0.2.13",
+    "host": "workstation-03",
+    "event_type": "file_access",
+    "severity_hint": "info",
+    "details": {
+      "file_path": "/docs/team_share/weekly_memo_3.pdf",
+      "action": "read"
+    },
+    "ground_truth": "benign",
+    "label_reason": "Baseline control group routine file access."
+  },
+  {
+    "event_id": "EVT0212",
+    "scenario_id": "SCN027",
+    "timestamp": "2026-10-20T11:15:00Z",
+    "username": "baseline_user_03",
+    "source_ip": "192.0.2.13",
+    "host": "workstation-03",
+    "event_type": "session_start",
+    "severity_hint": "info",
+    "details": {
+      "app_name": "SpreadsheetEditor",
+      "process_id": 4123
+    },
+    "ground_truth": "benign",
+    "label_reason": "Baseline control group standard office productivity application launch."
+  },
+  {
+    "event_id": "EVT0213",
+    "scenario_id": "SCN027",
+    "timestamp": "2026-10-20T14:45:20Z",
+    "username": "baseline_user_03",
+    "source_ip": "192.0.2.13",
+    "host": "workstation-03",
+    "event_type": "outbound_connection",
+    "severity_hint": "info",
+    "details": {
+      "destination_ip": "192.0.2.1",
+      "port": 443,
+      "connection_count": 2
+    },
+    "ground_truth": "benign",
+    "label_reason": "Baseline control group expected internal web server communication."
+  },
+  {
+    "event_id": "EVT0214",
+    "scenario_id": "SCN027",
+    "timestamp": "2026-10-20T17:00:00Z",
+    "username": "baseline_user_03",
+    "source_ip": "192.0.2.13",
+    "host": "workstation-03",
+    "event_type": "logout",
+    "severity_hint": "info",
+    "details": {
+      "session_type": "console",
+      "clean_shutdown": true
+    },
+    "ground_truth": "benign",
+    "label_reason": "Baseline control group routine workstation sign-off."
+  },
+  {
+    "event_id": "EVT0215",
+    "scenario_id": "SCN027",
+    "timestamp": "2026-10-20T08:00:00Z",
+    "username": "baseline_user_04",
+    "source_ip": "192.0.2.14",
+    "host": "workstation-04",
+    "event_type": "login_success",
+    "severity_hint": "info",
+    "details": {
+      "auth_method": "kerberos",
+      "device_known": true,
+      "mfa_verified": true
+    },
+    "ground_truth": "benign",
+    "label_reason": "Baseline control group routine workstation logon."
+  },
+  {
+    "event_id": "EVT0216",
+    "scenario_id": "SCN027",
+    "timestamp": "2026-10-20T09:30:15Z",
+    "username": "baseline_user_04",
+    "source_ip": "192.0.2.14",
+    "host": "workstation-04",
+    "event_type": "file_access",
+    "severity_hint": "info",
+    "details": {
+      "file_path": "/docs/team_share/weekly_memo_4.pdf",
+      "action": "read"
+    },
+    "ground_truth": "benign",
+    "label_reason": "Baseline control group routine file access."
+  },
+  {
+    "event_id": "EVT0217",
+    "scenario_id": "SCN027",
+    "timestamp": "2026-10-20T11:15:00Z",
+    "username": "baseline_user_04",
+    "source_ip": "192.0.2.14",
+    "host": "workstation-04",
+    "event_type": "session_start",
+    "severity_hint": "info",
+    "details": {
+      "app_name": "SpreadsheetEditor",
+      "process_id": 4124
+    },
+    "ground_truth": "benign",
+    "label_reason": "Baseline control group standard office productivity application launch."
+  },
+  {
+    "event_id": "EVT0218",
+    "scenario_id": "SCN027",
+    "timestamp": "2026-10-20T14:45:20Z",
+    "username": "baseline_user_04",
+    "source_ip": "192.0.2.14",
+    "host": "workstation-04",
+    "event_type": "outbound_connection",
+    "severity_hint": "info",
+    "details": {
+      "destination_ip": "192.0.2.1",
+      "port": 443,
+      "connection_count": 2
+    },
+    "ground_truth": "benign",
+    "label_reason": "Baseline control group expected internal web server communication."
+  },
+  {
+    "event_id": "EVT0219",
+    "scenario_id": "SCN027",
+    "timestamp": "2026-10-20T17:00:00Z",
+    "username": "baseline_user_04",
+    "source_ip": "192.0.2.14",
+    "host": "workstation-04",
+    "event_type": "logout",
+    "severity_hint": "info",
+    "details": {
+      "session_type": "console",
+      "clean_shutdown": true
+    },
+    "ground_truth": "benign",
+    "label_reason": "Baseline control group routine workstation sign-off."
+  },
+  {
+    "event_id": "EVT0220",
+    "scenario_id": "SCN027",
+    "timestamp": "2026-10-20T08:00:00Z",
+    "username": "baseline_user_05",
+    "source_ip": "192.0.2.15",
+    "host": "workstation-05",
+    "event_type": "login_success",
+    "severity_hint": "info",
+    "details": {
+      "auth_method": "kerberos",
+      "device_known": true,
+      "mfa_verified": true
+    },
+    "ground_truth": "benign",
+    "label_reason": "Baseline control group routine workstation logon."
+  },
+  {
+    "event_id": "EVT0221",
+    "scenario_id": "SCN027",
+    "timestamp": "2026-10-20T09:30:15Z",
+    "username": "baseline_user_05",
+    "source_ip": "192.0.2.15",
+    "host": "workstation-05",
+    "event_type": "file_access",
+    "severity_hint": "info",
+    "details": {
+      "file_path": "/docs/team_share/weekly_memo_5.pdf",
+      "action": "read"
+    },
+    "ground_truth": "benign",
+    "label_reason": "Baseline control group routine file access."
+  },
+  {
+    "event_id": "EVT0222",
+    "scenario_id": "SCN027",
+    "timestamp": "2026-10-20T11:15:00Z",
+    "username": "baseline_user_05",
+    "source_ip": "192.0.2.15",
+    "host": "workstation-05",
+    "event_type": "session_start",
+    "severity_hint": "info",
+    "details": {
+      "app_name": "SpreadsheetEditor",
+      "process_id": 4125
+    },
+    "ground_truth": "benign",
+    "label_reason": "Baseline control group standard office productivity application launch."
+  },
+  {
+    "event_id": "EVT0223",
+    "scenario_id": "SCN027",
+    "timestamp": "2026-10-20T14:45:20Z",
+    "username": "baseline_user_05",
+    "source_ip": "192.0.2.15",
+    "host": "workstation-05",
+    "event_type": "outbound_connection",
+    "severity_hint": "info",
+    "details": {
+      "destination_ip": "192.0.2.1",
+      "port": 443,
+      "connection_count": 2
+    },
+    "ground_truth": "benign",
+    "label_reason": "Baseline control group expected internal web server communication."
+  },
+  {
+    "event_id": "EVT0224",
+    "scenario_id": "SCN027",
+    "timestamp": "2026-10-20T17:00:00Z",
+    "username": "baseline_user_05",
+    "source_ip": "192.0.2.15",
+    "host": "workstation-05",
+    "event_type": "logout",
+    "severity_hint": "info",
+    "details": {
+      "session_type": "console",
+      "clean_shutdown": true
+    },
+    "ground_truth": "benign",
+    "label_reason": "Baseline control group routine workstation sign-off."
+  },
+  {
+    "event_id": "EVT0225",
+    "scenario_id": "SCN027",
+    "timestamp": "2026-10-20T08:00:00Z",
+    "username": "baseline_user_06",
+    "source_ip": "192.0.2.16",
+    "host": "workstation-06",
+    "event_type": "login_success",
+    "severity_hint": "info",
+    "details": {
+      "auth_method": "kerberos",
+      "device_known": true,
+      "mfa_verified": true
+    },
+    "ground_truth": "benign",
+    "label_reason": "Baseline control group routine workstation logon."
+  },
+  {
+    "event_id": "EVT0226",
+    "scenario_id": "SCN027",
+    "timestamp": "2026-10-20T09:30:15Z",
+    "username": "baseline_user_06",
+    "source_ip": "192.0.2.16",
+    "host": "workstation-06",
+    "event_type": "file_access",
+    "severity_hint": "info",
+    "details": {
+      "file_path": "/docs/team_share/weekly_memo_6.pdf",
+      "action": "read"
+    },
+    "ground_truth": "benign",
+    "label_reason": "Baseline control group routine file access."
+  },
+  {
+    "event_id": "EVT0227",
+    "scenario_id": "SCN027",
+    "timestamp": "2026-10-20T11:15:00Z",
+    "username": "baseline_user_06",
+    "source_ip": "192.0.2.16",
+    "host": "workstation-06",
+    "event_type": "session_start",
+    "severity_hint": "info",
+    "details": {
+      "app_name": "SpreadsheetEditor",
+      "process_id": 4126
+    },
+    "ground_truth": "benign",
+    "label_reason": "Baseline control group standard office productivity application launch."
+  },
+  {
+    "event_id": "EVT0228",
+    "scenario_id": "SCN027",
+    "timestamp": "2026-10-20T14:45:20Z",
+    "username": "baseline_user_06",
+    "source_ip": "192.0.2.16",
+    "host": "workstation-06",
+    "event_type": "outbound_connection",
+    "severity_hint": "info",
+    "details": {
+      "destination_ip": "192.0.2.1",
+      "port": 443,
+      "connection_count": 2
+    },
+    "ground_truth": "benign",
+    "label_reason": "Baseline control group expected internal web server communication."
+  },
+  {
+    "event_id": "EVT0229",
+    "scenario_id": "SCN027",
+    "timestamp": "2026-10-20T17:00:00Z",
+    "username": "baseline_user_06",
+    "source_ip": "192.0.2.16",
+    "host": "workstation-06",
+    "event_type": "logout",
+    "severity_hint": "info",
+    "details": {
+      "session_type": "console",
+      "clean_shutdown": true
+    },
+    "ground_truth": "benign",
+    "label_reason": "Baseline control group routine workstation sign-off."
+  },
+  {
+    "event_id": "EVT0230",
+    "scenario_id": "SCN027",
+    "timestamp": "2026-10-20T08:00:00Z",
+    "username": "baseline_user_07",
+    "source_ip": "192.0.2.17",
+    "host": "workstation-07",
+    "event_type": "login_success",
+    "severity_hint": "info",
+    "details": {
+      "auth_method": "kerberos",
+      "device_known": true,
+      "mfa_verified": true
+    },
+    "ground_truth": "benign",
+    "label_reason": "Baseline control group routine workstation logon."
+  },
+  {
+    "event_id": "EVT0231",
+    "scenario_id": "SCN027",
+    "timestamp": "2026-10-20T09:30:15Z",
+    "username": "baseline_user_07",
+    "source_ip": "192.0.2.17",
+    "host": "workstation-07",
+    "event_type": "file_access",
+    "severity_hint": "info",
+    "details": {
+      "file_path": "/docs/team_share/weekly_memo_7.pdf",
+      "action": "read"
+    },
+    "ground_truth": "benign",
+    "label_reason": "Baseline control group routine file access."
+  },
+  {
+    "event_id": "EVT0232",
+    "scenario_id": "SCN027",
+    "timestamp": "2026-10-20T11:15:00Z",
+    "username": "baseline_user_07",
+    "source_ip": "192.0.2.17",
+    "host": "workstation-07",
+    "event_type": "session_start",
+    "severity_hint": "info",
+    "details": {
+      "app_name": "SpreadsheetEditor",
+      "process_id": 4127
+    },
+    "ground_truth": "benign",
+    "label_reason": "Baseline control group standard office productivity application launch."
+  },
+  {
+    "event_id": "EVT0233",
+    "scenario_id": "SCN027",
+    "timestamp": "2026-10-20T14:45:20Z",
+    "username": "baseline_user_07",
+    "source_ip": "192.0.2.17",
+    "host": "workstation-07",
+    "event_type": "outbound_connection",
+    "severity_hint": "info",
+    "details": {
+      "destination_ip": "192.0.2.1",
+      "port": 443,
+      "connection_count": 2
+    },
+    "ground_truth": "benign",
+    "label_reason": "Baseline control group expected internal web server communication."
+  },
+  {
+    "event_id": "EVT0234",
+    "scenario_id": "SCN027",
+    "timestamp": "2026-10-20T17:00:00Z",
+    "username": "baseline_user_07",
+    "source_ip": "192.0.2.17",
+    "host": "workstation-07",
+    "event_type": "logout",
+    "severity_hint": "info",
+    "details": {
+      "session_type": "console",
+      "clean_shutdown": true
+    },
+    "ground_truth": "benign",
+    "label_reason": "Baseline control group routine workstation sign-off."
+  },
+  {
+    "event_id": "EVT0235",
+    "scenario_id": "SCN027",
+    "timestamp": "2026-10-20T08:00:00Z",
+    "username": "baseline_user_08",
+    "source_ip": "192.0.2.18",
+    "host": "workstation-08",
+    "event_type": "login_success",
+    "severity_hint": "info",
+    "details": {
+      "auth_method": "kerberos",
+      "device_known": true,
+      "mfa_verified": true
+    },
+    "ground_truth": "benign",
+    "label_reason": "Baseline control group routine workstation logon."
+  },
+  {
+    "event_id": "EVT0236",
+    "scenario_id": "SCN027",
+    "timestamp": "2026-10-20T09:30:15Z",
+    "username": "baseline_user_08",
+    "source_ip": "192.0.2.18",
+    "host": "workstation-08",
+    "event_type": "file_access",
+    "severity_hint": "info",
+    "details": {
+      "file_path": "/docs/team_share/weekly_memo_8.pdf",
+      "action": "read"
+    },
+    "ground_truth": "benign",
+    "label_reason": "Baseline control group routine file access."
+  },
+  {
+    "event_id": "EVT0237",
+    "scenario_id": "SCN027",
+    "timestamp": "2026-10-20T11:15:00Z",
+    "username": "baseline_user_08",
+    "source_ip": "192.0.2.18",
+    "host": "workstation-08",
+    "event_type": "session_start",
+    "severity_hint": "info",
+    "details": {
+      "app_name": "SpreadsheetEditor",
+      "process_id": 4128
+    },
+    "ground_truth": "benign",
+    "label_reason": "Baseline control group standard office productivity application launch."
+  },
+  {
+    "event_id": "EVT0238",
+    "scenario_id": "SCN027",
+    "timestamp": "2026-10-20T14:45:20Z",
+    "username": "baseline_user_08",
+    "source_ip": "192.0.2.18",
+    "host": "workstation-08",
+    "event_type": "outbound_connection",
+    "severity_hint": "info",
+    "details": {
+      "destination_ip": "192.0.2.1",
+      "port": 443,
+      "connection_count": 2
+    },
+    "ground_truth": "benign",
+    "label_reason": "Baseline control group expected internal web server communication."
+  },
+  {
+    "event_id": "EVT0239",
+    "scenario_id": "SCN027",
+    "timestamp": "2026-10-20T17:00:00Z",
+    "username": "baseline_user_08",
+    "source_ip": "192.0.2.18",
+    "host": "workstation-08",
+    "event_type": "logout",
+    "severity_hint": "info",
+    "details": {
+      "session_type": "console",
+      "clean_shutdown": true
+    },
+    "ground_truth": "benign",
+    "label_reason": "Baseline control group routine workstation sign-off."
+  },
+  {
+    "event_id": "EVT0240",
+    "scenario_id": "SCN027",
+    "timestamp": "2026-10-20T08:00:00Z",
+    "username": "baseline_user_09",
+    "source_ip": "192.0.2.19",
+    "host": "workstation-09",
+    "event_type": "login_success",
+    "severity_hint": "info",
+    "details": {
+      "auth_method": "kerberos",
+      "device_known": true,
+      "mfa_verified": true
+    },
+    "ground_truth": "benign",
+    "label_reason": "Baseline control group routine workstation logon."
+  },
+  {
+    "event_id": "EVT0241",
+    "scenario_id": "SCN027",
+    "timestamp": "2026-10-20T09:30:15Z",
+    "username": "baseline_user_09",
+    "source_ip": "192.0.2.19",
+    "host": "workstation-09",
+    "event_type": "file_access",
+    "severity_hint": "info",
+    "details": {
+      "file_path": "/docs/team_share/weekly_memo_9.pdf",
+      "action": "read"
+    },
+    "ground_truth": "benign",
+    "label_reason": "Baseline control group routine file access."
+  },
+  {
+    "event_id": "EVT0242",
+    "scenario_id": "SCN027",
+    "timestamp": "2026-10-20T11:15:00Z",
+    "username": "baseline_user_09",
+    "source_ip": "192.0.2.19",
+    "host": "workstation-09",
+    "event_type": "session_start",
+    "severity_hint": "info",
+    "details": {
+      "app_name": "SpreadsheetEditor",
+      "process_id": 4129
+    },
+    "ground_truth": "benign",
+    "label_reason": "Baseline control group standard office productivity application launch."
+  },
+  {
+    "event_id": "EVT0243",
+    "scenario_id": "SCN027",
+    "timestamp": "2026-10-20T14:45:20Z",
+    "username": "baseline_user_09",
+    "source_ip": "192.0.2.19",
+    "host": "workstation-09",
+    "event_type": "outbound_connection",
+    "severity_hint": "info",
+    "details": {
+      "destination_ip": "192.0.2.1",
+      "port": 443,
+      "connection_count": 2
+    },
+    "ground_truth": "benign",
+    "label_reason": "Baseline control group expected internal web server communication."
+  },
+  {
+    "event_id": "EVT0244",
+    "scenario_id": "SCN027",
+    "timestamp": "2026-10-20T17:00:00Z",
+    "username": "baseline_user_09",
+    "source_ip": "192.0.2.19",
+    "host": "workstation-09",
+    "event_type": "logout",
+    "severity_hint": "info",
+    "details": {
+      "session_type": "console",
+      "clean_shutdown": true
+    },
+    "ground_truth": "benign",
+    "label_reason": "Baseline control group routine workstation sign-off."
+  },
+  {
+    "event_id": "EVT0245",
+    "scenario_id": "SCN027",
+    "timestamp": "2026-10-20T08:00:00Z",
+    "username": "baseline_user_10",
+    "source_ip": "192.0.2.20",
+    "host": "workstation-10",
+    "event_type": "login_success",
+    "severity_hint": "info",
+    "details": {
+      "auth_method": "kerberos",
+      "device_known": true,
+      "mfa_verified": true
+    },
+    "ground_truth": "benign",
+    "label_reason": "Baseline control group routine workstation logon."
+  },
+  {
+    "event_id": "EVT0246",
+    "scenario_id": "SCN027",
+    "timestamp": "2026-10-20T09:30:15Z",
+    "username": "baseline_user_10",
+    "source_ip": "192.0.2.20",
+    "host": "workstation-10",
+    "event_type": "file_access",
+    "severity_hint": "info",
+    "details": {
+      "file_path": "/docs/team_share/weekly_memo_10.pdf",
+      "action": "read"
+    },
+    "ground_truth": "benign",
+    "label_reason": "Baseline control group routine file access."
+  },
+  {
+    "event_id": "EVT0247",
+    "scenario_id": "SCN027",
+    "timestamp": "2026-10-20T11:15:00Z",
+    "username": "baseline_user_10",
+    "source_ip": "192.0.2.20",
+    "host": "workstation-10",
+    "event_type": "session_start",
+    "severity_hint": "info",
+    "details": {
+      "app_name": "SpreadsheetEditor",
+      "process_id": 4130
+    },
+    "ground_truth": "benign",
+    "label_reason": "Baseline control group standard office productivity application launch."
+  },
+  {
+    "event_id": "EVT0248",
+    "scenario_id": "SCN027",
+    "timestamp": "2026-10-20T14:45:20Z",
+    "username": "baseline_user_10",
+    "source_ip": "192.0.2.20",
+    "host": "workstation-10",
+    "event_type": "outbound_connection",
+    "severity_hint": "info",
+    "details": {
+      "destination_ip": "192.0.2.1",
+      "port": 443,
+      "connection_count": 2
+    },
+    "ground_truth": "benign",
+    "label_reason": "Baseline control group expected internal web server communication."
+  },
+  {
+    "event_id": "EVT0249",
+    "scenario_id": "SCN027",
+    "timestamp": "2026-10-20T17:00:00Z",
+    "username": "baseline_user_10",
+    "source_ip": "192.0.2.20",
+    "host": "workstation-10",
+    "event_type": "logout",
+    "severity_hint": "info",
+    "details": {
+      "session_type": "console",
+      "clean_shutdown": true
+    },
+    "ground_truth": "benign",
+    "label_reason": "Baseline control group routine workstation sign-off."
+  },
+  {
+    "event_id": "EVT0250",
+    "scenario_id": "SCN027",
+    "timestamp": "2026-10-20T08:00:00Z",
+    "username": "baseline_user_11",
+    "source_ip": "192.0.2.21",
+    "host": "workstation-11",
+    "event_type": "login_success",
+    "severity_hint": "info",
+    "details": {
+      "auth_method": "kerberos",
+      "device_known": true,
+      "mfa_verified": true
+    },
+    "ground_truth": "benign",
+    "label_reason": "Baseline control group routine workstation logon."
+  },
+  {
+    "event_id": "EVT0251",
+    "scenario_id": "SCN027",
+    "timestamp": "2026-10-20T09:30:15Z",
+    "username": "baseline_user_11",
+    "source_ip": "192.0.2.21",
+    "host": "workstation-11",
+    "event_type": "file_access",
+    "severity_hint": "info",
+    "details": {
+      "file_path": "/docs/team_share/weekly_memo_11.pdf",
+      "action": "read"
+    },
+    "ground_truth": "benign",
+    "label_reason": "Baseline control group routine file access."
+  },
+  {
+    "event_id": "EVT0252",
+    "scenario_id": "SCN027",
+    "timestamp": "2026-10-20T11:15:00Z",
+    "username": "baseline_user_11",
+    "source_ip": "192.0.2.21",
+    "host": "workstation-11",
+    "event_type": "session_start",
+    "severity_hint": "info",
+    "details": {
+      "app_name": "SpreadsheetEditor",
+      "process_id": 4131
+    },
+    "ground_truth": "benign",
+    "label_reason": "Baseline control group standard office productivity application launch."
+  },
+  {
+    "event_id": "EVT0253",
+    "scenario_id": "SCN027",
+    "timestamp": "2026-10-20T14:45:20Z",
+    "username": "baseline_user_11",
+    "source_ip": "192.0.2.21",
+    "host": "workstation-11",
+    "event_type": "outbound_connection",
+    "severity_hint": "info",
+    "details": {
+      "destination_ip": "192.0.2.1",
+      "port": 443,
+      "connection_count": 2
+    },
+    "ground_truth": "benign",
+    "label_reason": "Baseline control group expected internal web server communication."
+  },
+  {
+    "event_id": "EVT0254",
+    "scenario_id": "SCN027",
+    "timestamp": "2026-10-20T17:00:00Z",
+    "username": "baseline_user_11",
+    "source_ip": "192.0.2.21",
+    "host": "workstation-11",
+    "event_type": "logout",
+    "severity_hint": "info",
+    "details": {
+      "session_type": "console",
+      "clean_shutdown": true
+    },
+    "ground_truth": "benign",
+    "label_reason": "Baseline control group routine workstation sign-off."
+  },
+  {
+    "event_id": "EVT0255",
+    "scenario_id": "SCN027",
+    "timestamp": "2026-10-20T08:00:00Z",
+    "username": "baseline_user_12",
+    "source_ip": "192.0.2.22",
+    "host": "workstation-12",
+    "event_type": "login_success",
+    "severity_hint": "info",
+    "details": {
+      "auth_method": "kerberos",
+      "device_known": true,
+      "mfa_verified": true
+    },
+    "ground_truth": "benign",
+    "label_reason": "Baseline control group routine workstation logon."
+  },
+  {
+    "event_id": "EVT0256",
+    "scenario_id": "SCN027",
+    "timestamp": "2026-10-20T09:30:15Z",
+    "username": "baseline_user_12",
+    "source_ip": "192.0.2.22",
+    "host": "workstation-12",
+    "event_type": "file_access",
+    "severity_hint": "info",
+    "details": {
+      "file_path": "/docs/team_share/weekly_memo_12.pdf",
+      "action": "read"
+    },
+    "ground_truth": "benign",
+    "label_reason": "Baseline control group routine file access."
+  },
+  {
+    "event_id": "EVT0257",
+    "scenario_id": "SCN027",
+    "timestamp": "2026-10-20T11:15:00Z",
+    "username": "baseline_user_12",
+    "source_ip": "192.0.2.22",
+    "host": "workstation-12",
+    "event_type": "session_start",
+    "severity_hint": "info",
+    "details": {
+      "app_name": "SpreadsheetEditor",
+      "process_id": 4132
+    },
+    "ground_truth": "benign",
+    "label_reason": "Baseline control group standard office productivity application launch."
+  },
+  {
+    "event_id": "EVT0258",
+    "scenario_id": "SCN027",
+    "timestamp": "2026-10-20T14:45:20Z",
+    "username": "baseline_user_12",
+    "source_ip": "192.0.2.22",
+    "host": "workstation-12",
+    "event_type": "outbound_connection",
+    "severity_hint": "info",
+    "details": {
+      "destination_ip": "192.0.2.1",
+      "port": 443,
+      "connection_count": 2
+    },
+    "ground_truth": "benign",
+    "label_reason": "Baseline control group expected internal web server communication."
+  },
+  {
+    "event_id": "EVT0259",
+    "scenario_id": "SCN027",
+    "timestamp": "2026-10-20T17:00:00Z",
+    "username": "baseline_user_12",
+    "source_ip": "192.0.2.22",
+    "host": "workstation-12",
+    "event_type": "logout",
+    "severity_hint": "info",
+    "details": {
+      "session_type": "console",
+      "clean_shutdown": true
+    },
+    "ground_truth": "benign",
+    "label_reason": "Baseline control group routine workstation sign-off."
+  },
+  {
+    "event_id": "EVT0260",
+    "scenario_id": "SCN027",
+    "timestamp": "2026-10-20T08:00:00Z",
+    "username": "baseline_user_13",
+    "source_ip": "192.0.2.23",
+    "host": "workstation-13",
+    "event_type": "login_success",
+    "severity_hint": "info",
+    "details": {
+      "auth_method": "kerberos",
+      "device_known": true,
+      "mfa_verified": true
+    },
+    "ground_truth": "benign",
+    "label_reason": "Baseline control group routine workstation logon."
+  },
+  {
+    "event_id": "EVT0261",
+    "scenario_id": "SCN027",
+    "timestamp": "2026-10-20T09:30:15Z",
+    "username": "baseline_user_13",
+    "source_ip": "192.0.2.23",
+    "host": "workstation-13",
+    "event_type": "file_access",
+    "severity_hint": "info",
+    "details": {
+      "file_path": "/docs/team_share/weekly_memo_13.pdf",
+      "action": "read"
+    },
+    "ground_truth": "benign",
+    "label_reason": "Baseline control group routine file access."
+  },
+  {
+    "event_id": "EVT0262",
+    "scenario_id": "SCN027",
+    "timestamp": "2026-10-20T11:15:00Z",
+    "username": "baseline_user_13",
+    "source_ip": "192.0.2.23",
+    "host": "workstation-13",
+    "event_type": "session_start",
+    "severity_hint": "info",
+    "details": {
+      "app_name": "SpreadsheetEditor",
+      "process_id": 4133
+    },
+    "ground_truth": "benign",
+    "label_reason": "Baseline control group standard office productivity application launch."
+  },
+  {
+    "event_id": "EVT0263",
+    "scenario_id": "SCN027",
+    "timestamp": "2026-10-20T14:45:20Z",
+    "username": "baseline_user_13",
+    "source_ip": "192.0.2.23",
+    "host": "workstation-13",
+    "event_type": "outbound_connection",
+    "severity_hint": "info",
+    "details": {
+      "destination_ip": "192.0.2.1",
+      "port": 443,
+      "connection_count": 2
+    },
+    "ground_truth": "benign",
+    "label_reason": "Baseline control group expected internal web server communication."
+  },
+  {
+    "event_id": "EVT0264",
+    "scenario_id": "SCN027",
+    "timestamp": "2026-10-20T17:00:00Z",
+    "username": "baseline_user_13",
+    "source_ip": "192.0.2.23",
+    "host": "workstation-13",
+    "event_type": "logout",
+    "severity_hint": "info",
+    "details": {
+      "session_type": "console",
+      "clean_shutdown": true
+    },
+    "ground_truth": "benign",
+    "label_reason": "Baseline control group routine workstation sign-off."
+  },
+  {
+    "event_id": "EVT0265",
+    "scenario_id": "SCN027",
+    "timestamp": "2026-10-20T08:00:00Z",
+    "username": "baseline_user_14",
+    "source_ip": "192.0.2.24",
+    "host": "workstation-14",
+    "event_type": "login_success",
+    "severity_hint": "info",
+    "details": {
+      "auth_method": "kerberos",
+      "device_known": true,
+      "mfa_verified": true
+    },
+    "ground_truth": "benign",
+    "label_reason": "Baseline control group routine workstation logon."
+  },
+  {
+    "event_id": "EVT0266",
+    "scenario_id": "SCN027",
+    "timestamp": "2026-10-20T09:30:15Z",
+    "username": "baseline_user_14",
+    "source_ip": "192.0.2.24",
+    "host": "workstation-14",
+    "event_type": "file_access",
+    "severity_hint": "info",
+    "details": {
+      "file_path": "/docs/team_share/weekly_memo_14.pdf",
+      "action": "read"
+    },
+    "ground_truth": "benign",
+    "label_reason": "Baseline control group routine file access."
+  },
+  {
+    "event_id": "EVT0267",
+    "scenario_id": "SCN027",
+    "timestamp": "2026-10-20T11:15:00Z",
+    "username": "baseline_user_14",
+    "source_ip": "192.0.2.24",
+    "host": "workstation-14",
+    "event_type": "session_start",
+    "severity_hint": "info",
+    "details": {
+      "app_name": "SpreadsheetEditor",
+      "process_id": 4134
+    },
+    "ground_truth": "benign",
+    "label_reason": "Baseline control group standard office productivity application launch."
+  },
+  {
+    "event_id": "EVT0268",
+    "scenario_id": "SCN027",
+    "timestamp": "2026-10-20T14:45:20Z",
+    "username": "baseline_user_14",
+    "source_ip": "192.0.2.24",
+    "host": "workstation-14",
+    "event_type": "outbound_connection",
+    "severity_hint": "info",
+    "details": {
+      "destination_ip": "192.0.2.1",
+      "port": 443,
+      "connection_count": 2
+    },
+    "ground_truth": "benign",
+    "label_reason": "Baseline control group expected internal web server communication."
+  },
+  {
+    "event_id": "EVT0269",
+    "scenario_id": "SCN027",
+    "timestamp": "2026-10-20T17:00:00Z",
+    "username": "baseline_user_14",
+    "source_ip": "192.0.2.24",
+    "host": "workstation-14",
+    "event_type": "logout",
+    "severity_hint": "info",
+    "details": {
+      "session_type": "console",
+      "clean_shutdown": true
+    },
+    "ground_truth": "benign",
+    "label_reason": "Baseline control group routine workstation sign-off."
+  },
+  {
+    "event_id": "EVT0270",
+    "scenario_id": "SCN027",
+    "timestamp": "2026-10-20T08:00:00Z",
+    "username": "baseline_user_15",
+    "source_ip": "192.0.2.25",
+    "host": "workstation-15",
+    "event_type": "login_success",
+    "severity_hint": "info",
+    "details": {
+      "auth_method": "kerberos",
+      "device_known": true,
+      "mfa_verified": true
+    },
+    "ground_truth": "benign",
+    "label_reason": "Baseline control group routine workstation logon."
+  },
+  {
+    "event_id": "EVT0271",
+    "scenario_id": "SCN027",
+    "timestamp": "2026-10-20T09:30:15Z",
+    "username": "baseline_user_15",
+    "source_ip": "192.0.2.25",
+    "host": "workstation-15",
+    "event_type": "file_access",
+    "severity_hint": "info",
+    "details": {
+      "file_path": "/docs/team_share/weekly_memo_15.pdf",
+      "action": "read"
+    },
+    "ground_truth": "benign",
+    "label_reason": "Baseline control group routine file access."
+  },
+  {
+    "event_id": "EVT0272",
+    "scenario_id": "SCN027",
+    "timestamp": "2026-10-20T11:15:00Z",
+    "username": "baseline_user_15",
+    "source_ip": "192.0.2.25",
+    "host": "workstation-15",
+    "event_type": "session_start",
+    "severity_hint": "info",
+    "details": {
+      "app_name": "SpreadsheetEditor",
+      "process_id": 4135
+    },
+    "ground_truth": "benign",
+    "label_reason": "Baseline control group standard office productivity application launch."
+  },
+  {
+    "event_id": "EVT0273",
+    "scenario_id": "SCN027",
+    "timestamp": "2026-10-20T14:45:20Z",
+    "username": "baseline_user_15",
+    "source_ip": "192.0.2.25",
+    "host": "workstation-15",
+    "event_type": "outbound_connection",
+    "severity_hint": "info",
+    "details": {
+      "destination_ip": "192.0.2.1",
+      "port": 443,
+      "connection_count": 2
+    },
+    "ground_truth": "benign",
+    "label_reason": "Baseline control group expected internal web server communication."
+  },
+  {
+    "event_id": "EVT0274",
+    "scenario_id": "SCN027",
+    "timestamp": "2026-10-20T17:00:00Z",
+    "username": "baseline_user_15",
+    "source_ip": "192.0.2.25",
+    "host": "workstation-15",
+    "event_type": "logout",
+    "severity_hint": "info",
+    "details": {
+      "session_type": "console",
+      "clean_shutdown": true
+    },
+    "ground_truth": "benign",
+    "label_reason": "Baseline control group routine workstation sign-off."
+  },
+  {
+    "event_id": "EVT0275",
+    "scenario_id": "SCN027",
+    "timestamp": "2026-10-20T08:00:00Z",
+    "username": "baseline_user_16",
+    "source_ip": "192.0.2.26",
+    "host": "workstation-01",
+    "event_type": "login_success",
+    "severity_hint": "info",
+    "details": {
+      "auth_method": "kerberos",
+      "device_known": true,
+      "mfa_verified": true
+    },
+    "ground_truth": "benign",
+    "label_reason": "Baseline control group routine workstation logon."
+  },
+  {
+    "event_id": "EVT0276",
+    "scenario_id": "SCN027",
+    "timestamp": "2026-10-20T09:30:15Z",
+    "username": "baseline_user_16",
+    "source_ip": "192.0.2.26",
+    "host": "workstation-01",
+    "event_type": "file_access",
+    "severity_hint": "info",
+    "details": {
+      "file_path": "/docs/team_share/weekly_memo_16.pdf",
+      "action": "read"
+    },
+    "ground_truth": "benign",
+    "label_reason": "Baseline control group routine file access."
+  },
+  {
+    "event_id": "EVT0277",
+    "scenario_id": "SCN027",
+    "timestamp": "2026-10-20T11:15:00Z",
+    "username": "baseline_user_16",
+    "source_ip": "192.0.2.26",
+    "host": "workstation-01",
+    "event_type": "session_start",
+    "severity_hint": "info",
+    "details": {
+      "app_name": "SpreadsheetEditor",
+      "process_id": 4136
+    },
+    "ground_truth": "benign",
+    "label_reason": "Baseline control group standard office productivity application launch."
+  },
+  {
+    "event_id": "EVT0278",
+    "scenario_id": "SCN027",
+    "timestamp": "2026-10-20T14:45:20Z",
+    "username": "baseline_user_16",
+    "source_ip": "192.0.2.26",
+    "host": "workstation-01",
+    "event_type": "outbound_connection",
+    "severity_hint": "info",
+    "details": {
+      "destination_ip": "192.0.2.1",
+      "port": 443,
+      "connection_count": 2
+    },
+    "ground_truth": "benign",
+    "label_reason": "Baseline control group expected internal web server communication."
+  },
+  {
+    "event_id": "EVT0279",
+    "scenario_id": "SCN027",
+    "timestamp": "2026-10-20T17:00:00Z",
+    "username": "baseline_user_16",
+    "source_ip": "192.0.2.26",
+    "host": "workstation-01",
+    "event_type": "logout",
+    "severity_hint": "info",
+    "details": {
+      "session_type": "console",
+      "clean_shutdown": true
+    },
+    "ground_truth": "benign",
+    "label_reason": "Baseline control group routine workstation sign-off."
+  },
+  {
+    "event_id": "EVT0280",
+    "scenario_id": "SCN027",
+    "timestamp": "2026-10-20T08:00:00Z",
+    "username": "baseline_user_17",
+    "source_ip": "192.0.2.27",
+    "host": "workstation-02",
+    "event_type": "login_success",
+    "severity_hint": "info",
+    "details": {
+      "auth_method": "kerberos",
+      "device_known": true,
+      "mfa_verified": true
+    },
+    "ground_truth": "benign",
+    "label_reason": "Baseline control group routine workstation logon."
+  },
+  {
+    "event_id": "EVT0281",
+    "scenario_id": "SCN027",
+    "timestamp": "2026-10-20T09:30:15Z",
+    "username": "baseline_user_17",
+    "source_ip": "192.0.2.27",
+    "host": "workstation-02",
+    "event_type": "file_access",
+    "severity_hint": "info",
+    "details": {
+      "file_path": "/docs/team_share/weekly_memo_17.pdf",
+      "action": "read"
+    },
+    "ground_truth": "benign",
+    "label_reason": "Baseline control group routine file access."
+  },
+  {
+    "event_id": "EVT0282",
+    "scenario_id": "SCN027",
+    "timestamp": "2026-10-20T11:15:00Z",
+    "username": "baseline_user_17",
+    "source_ip": "192.0.2.27",
+    "host": "workstation-02",
+    "event_type": "session_start",
+    "severity_hint": "info",
+    "details": {
+      "app_name": "SpreadsheetEditor",
+      "process_id": 4137
+    },
+    "ground_truth": "benign",
+    "label_reason": "Baseline control group standard office productivity application launch."
+  },
+  {
+    "event_id": "EVT0283",
+    "scenario_id": "SCN027",
+    "timestamp": "2026-10-20T14:45:20Z",
+    "username": "baseline_user_17",
+    "source_ip": "192.0.2.27",
+    "host": "workstation-02",
+    "event_type": "outbound_connection",
+    "severity_hint": "info",
+    "details": {
+      "destination_ip": "192.0.2.1",
+      "port": 443,
+      "connection_count": 2
+    },
+    "ground_truth": "benign",
+    "label_reason": "Baseline control group expected internal web server communication."
+  },
+  {
+    "event_id": "EVT0284",
+    "scenario_id": "SCN027",
+    "timestamp": "2026-10-20T17:00:00Z",
+    "username": "baseline_user_17",
+    "source_ip": "192.0.2.27",
+    "host": "workstation-02",
+    "event_type": "logout",
+    "severity_hint": "info",
+    "details": {
+      "session_type": "console",
+      "clean_shutdown": true
+    },
+    "ground_truth": "benign",
+    "label_reason": "Baseline control group routine workstation sign-off."
+  },
+  {
+    "event_id": "EVT0285",
+    "scenario_id": "SCN027",
+    "timestamp": "2026-10-20T08:00:00Z",
+    "username": "baseline_user_18",
+    "source_ip": "192.0.2.28",
+    "host": "workstation-03",
+    "event_type": "login_success",
+    "severity_hint": "info",
+    "details": {
+      "auth_method": "kerberos",
+      "device_known": true,
+      "mfa_verified": true
+    },
+    "ground_truth": "benign",
+    "label_reason": "Baseline control group routine workstation logon."
+  },
+  {
+    "event_id": "EVT0286",
+    "scenario_id": "SCN027",
+    "timestamp": "2026-10-20T09:30:15Z",
+    "username": "baseline_user_18",
+    "source_ip": "192.0.2.28",
+    "host": "workstation-03",
+    "event_type": "file_access",
+    "severity_hint": "info",
+    "details": {
+      "file_path": "/docs/team_share/weekly_memo_18.pdf",
+      "action": "read"
+    },
+    "ground_truth": "benign",
+    "label_reason": "Baseline control group routine file access."
+  },
+  {
+    "event_id": "EVT0287",
+    "scenario_id": "SCN027",
+    "timestamp": "2026-10-20T11:15:00Z",
+    "username": "baseline_user_18",
+    "source_ip": "192.0.2.28",
+    "host": "workstation-03",
+    "event_type": "session_start",
+    "severity_hint": "info",
+    "details": {
+      "app_name": "SpreadsheetEditor",
+      "process_id": 4138
+    },
+    "ground_truth": "benign",
+    "label_reason": "Baseline control group standard office productivity application launch."
+  },
+  {
+    "event_id": "EVT0288",
+    "scenario_id": "SCN027",
+    "timestamp": "2026-10-20T14:45:20Z",
+    "username": "baseline_user_18",
+    "source_ip": "192.0.2.28",
+    "host": "workstation-03",
+    "event_type": "outbound_connection",
+    "severity_hint": "info",
+    "details": {
+      "destination_ip": "192.0.2.1",
+      "port": 443,
+      "connection_count": 2
+    },
+    "ground_truth": "benign",
+    "label_reason": "Baseline control group expected internal web server communication."
+  },
+  {
+    "event_id": "EVT0289",
+    "scenario_id": "SCN027",
+    "timestamp": "2026-10-20T17:00:00Z",
+    "username": "baseline_user_18",
+    "source_ip": "192.0.2.28",
+    "host": "workstation-03",
+    "event_type": "logout",
+    "severity_hint": "info",
+    "details": {
+      "session_type": "console",
+      "clean_shutdown": true
+    },
+    "ground_truth": "benign",
+    "label_reason": "Baseline control group routine workstation sign-off."
+  },
+  {
+    "event_id": "EVT0290",
+    "scenario_id": "SCN027",
+    "timestamp": "2026-10-20T08:00:00Z",
+    "username": "baseline_user_19",
+    "source_ip": "192.0.2.29",
+    "host": "workstation-04",
+    "event_type": "login_success",
+    "severity_hint": "info",
+    "details": {
+      "auth_method": "kerberos",
+      "device_known": true,
+      "mfa_verified": true
+    },
+    "ground_truth": "benign",
+    "label_reason": "Baseline control group routine workstation logon."
+  },
+  {
+    "event_id": "EVT0291",
+    "scenario_id": "SCN027",
+    "timestamp": "2026-10-20T09:30:15Z",
+    "username": "baseline_user_19",
+    "source_ip": "192.0.2.29",
+    "host": "workstation-04",
+    "event_type": "file_access",
+    "severity_hint": "info",
+    "details": {
+      "file_path": "/docs/team_share/weekly_memo_19.pdf",
+      "action": "read"
+    },
+    "ground_truth": "benign",
+    "label_reason": "Baseline control group routine file access."
+  },
+  {
+    "event_id": "EVT0292",
+    "scenario_id": "SCN027",
+    "timestamp": "2026-10-20T11:15:00Z",
+    "username": "baseline_user_19",
+    "source_ip": "192.0.2.29",
+    "host": "workstation-04",
+    "event_type": "session_start",
+    "severity_hint": "info",
+    "details": {
+      "app_name": "SpreadsheetEditor",
+      "process_id": 4139
+    },
+    "ground_truth": "benign",
+    "label_reason": "Baseline control group standard office productivity application launch."
+  },
+  {
+    "event_id": "EVT0293",
+    "scenario_id": "SCN027",
+    "timestamp": "2026-10-20T14:45:20Z",
+    "username": "baseline_user_19",
+    "source_ip": "192.0.2.29",
+    "host": "workstation-04",
+    "event_type": "outbound_connection",
+    "severity_hint": "info",
+    "details": {
+      "destination_ip": "192.0.2.1",
+      "port": 443,
+      "connection_count": 2
+    },
+    "ground_truth": "benign",
+    "label_reason": "Baseline control group expected internal web server communication."
+  },
+  {
+    "event_id": "EVT0294",
+    "scenario_id": "SCN027",
+    "timestamp": "2026-10-20T17:00:00Z",
+    "username": "baseline_user_19",
+    "source_ip": "192.0.2.29",
+    "host": "workstation-04",
+    "event_type": "logout",
+    "severity_hint": "info",
+    "details": {
+      "session_type": "console",
+      "clean_shutdown": true
+    },
+    "ground_truth": "benign",
+    "label_reason": "Baseline control group routine workstation sign-off."
+  },
+  {
+    "event_id": "EVT0295",
+    "scenario_id": "SCN027",
+    "timestamp": "2026-10-20T08:00:00Z",
+    "username": "baseline_user_20",
+    "source_ip": "192.0.2.30",
+    "host": "workstation-05",
+    "event_type": "login_success",
+    "severity_hint": "info",
+    "details": {
+      "auth_method": "kerberos",
+      "device_known": true,
+      "mfa_verified": true
+    },
+    "ground_truth": "benign",
+    "label_reason": "Baseline control group routine workstation logon."
+  },
+  {
+    "event_id": "EVT0296",
+    "scenario_id": "SCN027",
+    "timestamp": "2026-10-20T09:30:15Z",
+    "username": "baseline_user_20",
+    "source_ip": "192.0.2.30",
+    "host": "workstation-05",
+    "event_type": "file_access",
+    "severity_hint": "info",
+    "details": {
+      "file_path": "/docs/team_share/weekly_memo_20.pdf",
+      "action": "read"
+    },
+    "ground_truth": "benign",
+    "label_reason": "Baseline control group routine file access."
+  },
+  {
+    "event_id": "EVT0297",
+    "scenario_id": "SCN027",
+    "timestamp": "2026-10-20T11:15:00Z",
+    "username": "baseline_user_20",
+    "source_ip": "192.0.2.30",
+    "host": "workstation-05",
+    "event_type": "session_start",
+    "severity_hint": "info",
+    "details": {
+      "app_name": "SpreadsheetEditor",
+      "process_id": 4140
+    },
+    "ground_truth": "benign",
+    "label_reason": "Baseline control group standard office productivity application launch."
+  },
+  {
+    "event_id": "EVT0298",
+    "scenario_id": "SCN027",
+    "timestamp": "2026-10-20T14:45:20Z",
+    "username": "baseline_user_20",
+    "source_ip": "192.0.2.30",
+    "host": "workstation-05",
+    "event_type": "outbound_connection",
+    "severity_hint": "info",
+    "details": {
+      "destination_ip": "192.0.2.1",
+      "port": 443,
+      "connection_count": 2
+    },
+    "ground_truth": "benign",
+    "label_reason": "Baseline control group expected internal web server communication."
+  },
+  {
+    "event_id": "EVT0299",
+    "scenario_id": "SCN027",
+    "timestamp": "2026-10-20T17:00:00Z",
+    "username": "baseline_user_20",
+    "source_ip": "192.0.2.30",
+    "host": "workstation-05",
+    "event_type": "logout",
+    "severity_hint": "info",
+    "details": {
+      "session_type": "console",
+      "clean_shutdown": true
+    },
+    "ground_truth": "benign",
+    "label_reason": "Baseline control group routine workstation sign-off."
+  }
+]

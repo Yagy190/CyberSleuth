@@ -1,0 +1,1052 @@
+[
+  {
+    "event_id": "EVT0115",
+    "scenario_id": "SCN019",
+    "timestamp": "2026-10-21T01:10:00Z",
+    "username": "victor",
+    "source_ip": "192.0.2.110",
+    "host": "workstation-03",
+    "event_type": "remote_login",
+    "severity_hint": "high",
+    "details": {
+      "protocol": "RDP",
+      "source_internal": true,
+      "logon_type": 10
+    },
+    "ground_truth": "suspicious",
+    "label_reason": "Rapid sequential remote desktop sessions hopping across internal workstations."
+  },
+  {
+    "event_id": "EVT0116",
+    "scenario_id": "SCN019",
+    "timestamp": "2026-10-21T01:11:15Z",
+    "username": "victor",
+    "source_ip": "192.0.2.110",
+    "host": "workstation-03",
+    "event_type": "file_access",
+    "severity_hint": "medium",
+    "details": {
+      "file_path": "C:\\Users\\Administrator\\AppData\\Local\\Temp\\sc0.bat",
+      "action": "write"
+    },
+    "ground_truth": "suspicious",
+    "label_reason": "Script execution artifact written to administrative temp directories across target machines."
+  },
+  {
+    "event_id": "EVT0117",
+    "scenario_id": "SCN019",
+    "timestamp": "2026-10-21T01:12:00Z",
+    "username": "victor",
+    "source_ip": "192.0.2.111",
+    "host": "workstation-05",
+    "event_type": "remote_login",
+    "severity_hint": "high",
+    "details": {
+      "protocol": "RDP",
+      "source_internal": true,
+      "logon_type": 10
+    },
+    "ground_truth": "suspicious",
+    "label_reason": "Rapid sequential remote desktop sessions hopping across internal workstations."
+  },
+  {
+    "event_id": "EVT0118",
+    "scenario_id": "SCN019",
+    "timestamp": "2026-10-21T01:13:15Z",
+    "username": "victor",
+    "source_ip": "192.0.2.111",
+    "host": "workstation-05",
+    "event_type": "file_access",
+    "severity_hint": "medium",
+    "details": {
+      "file_path": "C:\\Users\\Administrator\\AppData\\Local\\Temp\\sc1.bat",
+      "action": "write"
+    },
+    "ground_truth": "suspicious",
+    "label_reason": "Script execution artifact written to administrative temp directories across target machines."
+  },
+  {
+    "event_id": "EVT0119",
+    "scenario_id": "SCN019",
+    "timestamp": "2026-10-21T01:14:00Z",
+    "username": "victor",
+    "source_ip": "192.0.2.112",
+    "host": "workstation-08",
+    "event_type": "remote_login",
+    "severity_hint": "high",
+    "details": {
+      "protocol": "RDP",
+      "source_internal": true,
+      "logon_type": 10
+    },
+    "ground_truth": "suspicious",
+    "label_reason": "Rapid sequential remote desktop sessions hopping across internal workstations."
+  },
+  {
+    "event_id": "EVT0120",
+    "scenario_id": "SCN019",
+    "timestamp": "2026-10-21T01:15:15Z",
+    "username": "victor",
+    "source_ip": "192.0.2.112",
+    "host": "workstation-08",
+    "event_type": "file_access",
+    "severity_hint": "medium",
+    "details": {
+      "file_path": "C:\\Users\\Administrator\\AppData\\Local\\Temp\\sc2.bat",
+      "action": "write"
+    },
+    "ground_truth": "suspicious",
+    "label_reason": "Script execution artifact written to administrative temp directories across target machines."
+  },
+  {
+    "event_id": "EVT0121",
+    "scenario_id": "SCN019",
+    "timestamp": "2026-10-21T01:16:00Z",
+    "username": "victor",
+    "source_ip": "192.0.2.113",
+    "host": "server-02",
+    "event_type": "remote_login",
+    "severity_hint": "high",
+    "details": {
+      "protocol": "RDP",
+      "source_internal": true,
+      "logon_type": 10
+    },
+    "ground_truth": "suspicious",
+    "label_reason": "Rapid sequential remote desktop sessions hopping across internal workstations."
+  },
+  {
+    "event_id": "EVT0122",
+    "scenario_id": "SCN019",
+    "timestamp": "2026-10-21T01:17:15Z",
+    "username": "victor",
+    "source_ip": "192.0.2.113",
+    "host": "server-02",
+    "event_type": "file_access",
+    "severity_hint": "medium",
+    "details": {
+      "file_path": "C:\\Users\\Administrator\\AppData\\Local\\Temp\\sc3.bat",
+      "action": "write"
+    },
+    "ground_truth": "suspicious",
+    "label_reason": "Script execution artifact written to administrative temp directories across target machines."
+  },
+  {
+    "event_id": "EVT0123",
+    "scenario_id": "SCN020",
+    "timestamp": "2026-10-21T02:00:10Z",
+    "username": "wendy",
+    "source_ip": "192.0.2.130",
+    "host": "workstation-10",
+    "event_type": "file_access",
+    "severity_hint": "high",
+    "details": {
+      "file_path": "/vault/patents/2026_design_schematics_part1.tar.gz",
+      "action": "read",
+      "bytes": 85000000
+    },
+    "ground_truth": "suspicious",
+    "label_reason": "Unusual bulk read operations on restricted IP patent repository."
+  },
+  {
+    "event_id": "EVT0124",
+    "scenario_id": "SCN020",
+    "timestamp": "2026-10-21T02:01:10Z",
+    "username": "wendy",
+    "source_ip": "192.0.2.130",
+    "host": "workstation-10",
+    "event_type": "file_access",
+    "severity_hint": "high",
+    "details": {
+      "file_path": "/vault/patents/2026_design_schematics_part2.tar.gz",
+      "action": "read",
+      "bytes": 85000000
+    },
+    "ground_truth": "suspicious",
+    "label_reason": "Unusual bulk read operations on restricted IP patent repository."
+  },
+  {
+    "event_id": "EVT0125",
+    "scenario_id": "SCN020",
+    "timestamp": "2026-10-21T02:02:10Z",
+    "username": "wendy",
+    "source_ip": "192.0.2.130",
+    "host": "workstation-10",
+    "event_type": "file_access",
+    "severity_hint": "high",
+    "details": {
+      "file_path": "/vault/patents/2026_design_schematics_part3.tar.gz",
+      "action": "read",
+      "bytes": 85000000
+    },
+    "ground_truth": "suspicious",
+    "label_reason": "Unusual bulk read operations on restricted IP patent repository."
+  },
+  {
+    "event_id": "EVT0126",
+    "scenario_id": "SCN020",
+    "timestamp": "2026-10-21T02:03:10Z",
+    "username": "wendy",
+    "source_ip": "192.0.2.130",
+    "host": "workstation-10",
+    "event_type": "file_access",
+    "severity_hint": "high",
+    "details": {
+      "file_path": "/vault/patents/2026_design_schematics_part4.tar.gz",
+      "action": "read",
+      "bytes": 85000000
+    },
+    "ground_truth": "suspicious",
+    "label_reason": "Unusual bulk read operations on restricted IP patent repository."
+  },
+  {
+    "event_id": "EVT0127",
+    "scenario_id": "SCN020",
+    "timestamp": "2026-10-21T02:04:10Z",
+    "username": "wendy",
+    "source_ip": "192.0.2.130",
+    "host": "workstation-10",
+    "event_type": "file_access",
+    "severity_hint": "high",
+    "details": {
+      "file_path": "/vault/patents/2026_design_schematics_part5.tar.gz",
+      "action": "read",
+      "bytes": 85000000
+    },
+    "ground_truth": "suspicious",
+    "label_reason": "Unusual bulk read operations on restricted IP patent repository."
+  },
+  {
+    "event_id": "EVT0128",
+    "scenario_id": "SCN020",
+    "timestamp": "2026-10-21T02:05:10Z",
+    "username": "wendy",
+    "source_ip": "192.0.2.130",
+    "host": "workstation-10",
+    "event_type": "file_access",
+    "severity_hint": "high",
+    "details": {
+      "file_path": "/vault/patents/2026_design_schematics_part6.tar.gz",
+      "action": "read",
+      "bytes": 85000000
+    },
+    "ground_truth": "suspicious",
+    "label_reason": "Unusual bulk read operations on restricted IP patent repository."
+  },
+  {
+    "event_id": "EVT0129",
+    "scenario_id": "SCN020",
+    "timestamp": "2026-10-21T02:10:00Z",
+    "username": "wendy",
+    "source_ip": "192.0.2.130",
+    "host": "workstation-10",
+    "event_type": "outbound_connection",
+    "severity_hint": "critical",
+    "details": {
+      "destination_ip": "198.51.100.77",
+      "port": 8443,
+      "bytes_sent": 128000000,
+      "protocol": "https"
+    },
+    "ground_truth": "suspicious",
+    "label_reason": "Heavy sustained encrypted data egress to unclassified external IP address."
+  },
+  {
+    "event_id": "EVT0130",
+    "scenario_id": "SCN020",
+    "timestamp": "2026-10-21T02:11:00Z",
+    "username": "wendy",
+    "source_ip": "192.0.2.130",
+    "host": "workstation-10",
+    "event_type": "outbound_connection",
+    "severity_hint": "critical",
+    "details": {
+      "destination_ip": "198.51.100.77",
+      "port": 8443,
+      "bytes_sent": 128000000,
+      "protocol": "https"
+    },
+    "ground_truth": "suspicious",
+    "label_reason": "Heavy sustained encrypted data egress to unclassified external IP address."
+  },
+  {
+    "event_id": "EVT0131",
+    "scenario_id": "SCN020",
+    "timestamp": "2026-10-21T02:12:00Z",
+    "username": "wendy",
+    "source_ip": "192.0.2.130",
+    "host": "workstation-10",
+    "event_type": "outbound_connection",
+    "severity_hint": "critical",
+    "details": {
+      "destination_ip": "198.51.100.77",
+      "port": 8443,
+      "bytes_sent": 128000000,
+      "protocol": "https"
+    },
+    "ground_truth": "suspicious",
+    "label_reason": "Heavy sustained encrypted data egress to unclassified external IP address."
+  },
+  {
+    "event_id": "EVT0132",
+    "scenario_id": "SCN020",
+    "timestamp": "2026-10-21T02:13:00Z",
+    "username": "wendy",
+    "source_ip": "192.0.2.130",
+    "host": "workstation-10",
+    "event_type": "outbound_connection",
+    "severity_hint": "critical",
+    "details": {
+      "destination_ip": "198.51.100.77",
+      "port": 8443,
+      "bytes_sent": 128000000,
+      "protocol": "https"
+    },
+    "ground_truth": "suspicious",
+    "label_reason": "Heavy sustained encrypted data egress to unclassified external IP address."
+  },
+  {
+    "event_id": "EVT0133",
+    "scenario_id": "SCN021",
+    "timestamp": "2026-10-21T03:00:00Z",
+    "username": "x_user_01",
+    "source_ip": "198.51.100.88",
+    "host": "auth-gateway-01",
+    "event_type": "login_failed",
+    "severity_hint": "medium",
+    "details": {
+      "reason": "invalid_credentials",
+      "user_agent": "Python-urllib/3.10"
+    },
+    "ground_truth": "suspicious",
+    "label_reason": "Automated single-attempt password spray targeting multiple distinct usernames from single external IP."
+  },
+  {
+    "event_id": "EVT0134",
+    "scenario_id": "SCN021",
+    "timestamp": "2026-10-21T03:00:04Z",
+    "username": "x_user_01",
+    "source_ip": "198.51.100.88",
+    "host": "auth-gateway-01",
+    "event_type": "login_failed",
+    "severity_hint": "medium",
+    "details": {
+      "reason": "invalid_credentials",
+      "user_agent": "Python-urllib/3.10"
+    },
+    "ground_truth": "suspicious",
+    "label_reason": "Follow-up dictionary password spray against enumerated directory accounts."
+  },
+  {
+    "event_id": "EVT0135",
+    "scenario_id": "SCN021",
+    "timestamp": "2026-10-21T03:00:10Z",
+    "username": "x_user_02",
+    "source_ip": "198.51.100.88",
+    "host": "auth-gateway-01",
+    "event_type": "login_failed",
+    "severity_hint": "medium",
+    "details": {
+      "reason": "invalid_credentials",
+      "user_agent": "Python-urllib/3.10"
+    },
+    "ground_truth": "suspicious",
+    "label_reason": "Automated single-attempt password spray targeting multiple distinct usernames from single external IP."
+  },
+  {
+    "event_id": "EVT0136",
+    "scenario_id": "SCN021",
+    "timestamp": "2026-10-21T03:00:14Z",
+    "username": "x_user_02",
+    "source_ip": "198.51.100.88",
+    "host": "auth-gateway-01",
+    "event_type": "login_failed",
+    "severity_hint": "medium",
+    "details": {
+      "reason": "invalid_credentials",
+      "user_agent": "Python-urllib/3.10"
+    },
+    "ground_truth": "suspicious",
+    "label_reason": "Follow-up dictionary password spray against enumerated directory accounts."
+  },
+  {
+    "event_id": "EVT0137",
+    "scenario_id": "SCN021",
+    "timestamp": "2026-10-21T03:00:20Z",
+    "username": "x_user_03",
+    "source_ip": "198.51.100.88",
+    "host": "auth-gateway-01",
+    "event_type": "login_failed",
+    "severity_hint": "medium",
+    "details": {
+      "reason": "invalid_credentials",
+      "user_agent": "Python-urllib/3.10"
+    },
+    "ground_truth": "suspicious",
+    "label_reason": "Automated single-attempt password spray targeting multiple distinct usernames from single external IP."
+  },
+  {
+    "event_id": "EVT0138",
+    "scenario_id": "SCN021",
+    "timestamp": "2026-10-21T03:00:24Z",
+    "username": "x_user_03",
+    "source_ip": "198.51.100.88",
+    "host": "auth-gateway-01",
+    "event_type": "login_failed",
+    "severity_hint": "medium",
+    "details": {
+      "reason": "invalid_credentials",
+      "user_agent": "Python-urllib/3.10"
+    },
+    "ground_truth": "suspicious",
+    "label_reason": "Follow-up dictionary password spray against enumerated directory accounts."
+  },
+  {
+    "event_id": "EVT0139",
+    "scenario_id": "SCN021",
+    "timestamp": "2026-10-21T03:00:30Z",
+    "username": "x_user_04",
+    "source_ip": "198.51.100.88",
+    "host": "auth-gateway-01",
+    "event_type": "login_failed",
+    "severity_hint": "medium",
+    "details": {
+      "reason": "invalid_credentials",
+      "user_agent": "Python-urllib/3.10"
+    },
+    "ground_truth": "suspicious",
+    "label_reason": "Automated single-attempt password spray targeting multiple distinct usernames from single external IP."
+  },
+  {
+    "event_id": "EVT0140",
+    "scenario_id": "SCN021",
+    "timestamp": "2026-10-21T03:00:34Z",
+    "username": "x_user_04",
+    "source_ip": "198.51.100.88",
+    "host": "auth-gateway-01",
+    "event_type": "login_failed",
+    "severity_hint": "medium",
+    "details": {
+      "reason": "invalid_credentials",
+      "user_agent": "Python-urllib/3.10"
+    },
+    "ground_truth": "suspicious",
+    "label_reason": "Follow-up dictionary password spray against enumerated directory accounts."
+  },
+  {
+    "event_id": "EVT0141",
+    "scenario_id": "SCN021",
+    "timestamp": "2026-10-21T03:00:40Z",
+    "username": "x_user_05",
+    "source_ip": "198.51.100.88",
+    "host": "auth-gateway-01",
+    "event_type": "login_failed",
+    "severity_hint": "medium",
+    "details": {
+      "reason": "invalid_credentials",
+      "user_agent": "Python-urllib/3.10"
+    },
+    "ground_truth": "suspicious",
+    "label_reason": "Automated single-attempt password spray targeting multiple distinct usernames from single external IP."
+  },
+  {
+    "event_id": "EVT0142",
+    "scenario_id": "SCN021",
+    "timestamp": "2026-10-21T03:00:44Z",
+    "username": "x_user_05",
+    "source_ip": "198.51.100.88",
+    "host": "auth-gateway-01",
+    "event_type": "login_failed",
+    "severity_hint": "medium",
+    "details": {
+      "reason": "invalid_credentials",
+      "user_agent": "Python-urllib/3.10"
+    },
+    "ground_truth": "suspicious",
+    "label_reason": "Follow-up dictionary password spray against enumerated directory accounts."
+  },
+  {
+    "event_id": "EVT0143",
+    "scenario_id": "SCN022",
+    "timestamp": "2026-10-21T23:10:00Z",
+    "username": "yuri",
+    "source_ip": "192.0.2.145",
+    "host": "workstation-09",
+    "event_type": "login_success",
+    "severity_hint": "medium",
+    "details": {
+      "auth_method": "password",
+      "local_hour": 23
+    },
+    "ground_truth": "suspicious",
+    "label_reason": "Off-shift endpoint access by non-essential developer personnel."
+  },
+  {
+    "event_id": "EVT0144",
+    "scenario_id": "SCN022",
+    "timestamp": "2026-10-21T23:14:22Z",
+    "username": "yuri",
+    "source_ip": "192.0.2.145",
+    "host": "workstation-09",
+    "event_type": "usb_mount",
+    "severity_hint": "high",
+    "details": {
+      "device_vendor": "SanDisk_Ultra",
+      "serial": "USB-99214-SN"
+    },
+    "ground_truth": "suspicious",
+    "label_reason": "Removable mass storage device attached to corporate host in violation of policy."
+  },
+  {
+    "event_id": "EVT0145",
+    "scenario_id": "SCN022",
+    "timestamp": "2026-10-21T23:18:00Z",
+    "username": "yuri",
+    "source_ip": "192.0.2.145",
+    "host": "workstation-09",
+    "event_type": "file_access",
+    "severity_hint": "high",
+    "details": {
+      "file_path": "/hr/payroll/executive_compensation_2026_q1.xlsx",
+      "destination": "E:\\backup\\",
+      "action": "copy"
+    },
+    "ground_truth": "suspicious",
+    "label_reason": "Out-of-role mass copying of confidential HR payroll tables to external drive."
+  },
+  {
+    "event_id": "EVT0146",
+    "scenario_id": "SCN022",
+    "timestamp": "2026-10-21T23:18:01Z",
+    "username": "yuri",
+    "source_ip": "192.0.2.145",
+    "host": "workstation-09",
+    "event_type": "file_access",
+    "severity_hint": "high",
+    "details": {
+      "file_path": "/hr/payroll/executive_compensation_2026_q2.xlsx",
+      "destination": "E:\\backup\\",
+      "action": "copy"
+    },
+    "ground_truth": "suspicious",
+    "label_reason": "Out-of-role mass copying of confidential HR payroll tables to external drive."
+  },
+  {
+    "event_id": "EVT0147",
+    "scenario_id": "SCN022",
+    "timestamp": "2026-10-21T23:18:02Z",
+    "username": "yuri",
+    "source_ip": "192.0.2.145",
+    "host": "workstation-09",
+    "event_type": "file_access",
+    "severity_hint": "high",
+    "details": {
+      "file_path": "/hr/payroll/executive_compensation_2026_q3.xlsx",
+      "destination": "E:\\backup\\",
+      "action": "copy"
+    },
+    "ground_truth": "suspicious",
+    "label_reason": "Out-of-role mass copying of confidential HR payroll tables to external drive."
+  },
+  {
+    "event_id": "EVT0148",
+    "scenario_id": "SCN022",
+    "timestamp": "2026-10-21T23:18:03Z",
+    "username": "yuri",
+    "source_ip": "192.0.2.145",
+    "host": "workstation-09",
+    "event_type": "file_access",
+    "severity_hint": "high",
+    "details": {
+      "file_path": "/hr/payroll/executive_compensation_2026_q4.xlsx",
+      "destination": "E:\\backup\\",
+      "action": "copy"
+    },
+    "ground_truth": "suspicious",
+    "label_reason": "Out-of-role mass copying of confidential HR payroll tables to external drive."
+  },
+  {
+    "event_id": "EVT0149",
+    "scenario_id": "SCN022",
+    "timestamp": "2026-10-21T23:25:00Z",
+    "username": "yuri",
+    "source_ip": "192.0.2.145",
+    "host": "workstation-09",
+    "event_type": "log_deletion",
+    "severity_hint": "critical",
+    "details": {
+      "target_log": "/var/log/audit/audit.log",
+      "cleared_lines": 4200
+    },
+    "ground_truth": "suspicious",
+    "label_reason": "Intentional clearance of local security event audit logs to evade detection."
+  },
+  {
+    "event_id": "EVT0150",
+    "scenario_id": "SCN022",
+    "timestamp": "2026-10-21T23:28:10Z",
+    "username": "yuri",
+    "source_ip": "192.0.2.145",
+    "host": "workstation-09",
+    "event_type": "logout",
+    "severity_hint": "medium",
+    "details": {
+      "session_duration": 1090
+    },
+    "ground_truth": "suspicious",
+    "label_reason": "Immediate disconnection following file transfer and log tampering."
+  },
+  {
+    "event_id": "EVT0151",
+    "scenario_id": "SCN023",
+    "timestamp": "2026-10-22T04:15:00Z",
+    "username": "service_backup",
+    "source_ip": "192.0.2.201",
+    "host": "server-04",
+    "event_type": "login_success",
+    "severity_hint": "high",
+    "details": {
+      "logon_type": "interactive_gui",
+      "allowed_type": "batch_only"
+    },
+    "ground_truth": "suspicious",
+    "label_reason": "Non-interactive system backup account used for interactive GUI desktop session."
+  },
+  {
+    "event_id": "EVT0152",
+    "scenario_id": "SCN023",
+    "timestamp": "2026-10-22T04:16:30Z",
+    "username": "service_backup",
+    "source_ip": "192.0.2.201",
+    "host": "server-04",
+    "event_type": "privilege_change",
+    "severity_hint": "critical",
+    "details": {
+      "new_role": "Domain Admins",
+      "change_ticket": null,
+      "approved": false
+    },
+    "ground_truth": "suspicious",
+    "label_reason": "Unapproved privilege escalation granting domain administrator rights to service account."
+  },
+  {
+    "event_id": "EVT0153",
+    "scenario_id": "SCN023",
+    "timestamp": "2026-10-22T04:18:00Z",
+    "username": "service_backup",
+    "source_ip": "192.0.2.201",
+    "host": "server-04",
+    "event_type": "file_access",
+    "severity_hint": "critical",
+    "details": {
+      "file_path": "C:\\Windows\\NTDS\\ntds_shard_0.dit",
+      "action": "volume_shadow_copy_read"
+    },
+    "ground_truth": "suspicious",
+    "label_reason": "Active Directory NTDS database extraction attempt via VSS shadow copy."
+  },
+  {
+    "event_id": "EVT0154",
+    "scenario_id": "SCN023",
+    "timestamp": "2026-10-22T04:18:12Z",
+    "username": "service_backup",
+    "source_ip": "192.0.2.201",
+    "host": "server-04",
+    "event_type": "file_access",
+    "severity_hint": "critical",
+    "details": {
+      "file_path": "C:\\Windows\\NTDS\\ntds_shard_1.dit",
+      "action": "volume_shadow_copy_read"
+    },
+    "ground_truth": "suspicious",
+    "label_reason": "Active Directory NTDS database extraction attempt via VSS shadow copy."
+  },
+  {
+    "event_id": "EVT0155",
+    "scenario_id": "SCN023",
+    "timestamp": "2026-10-22T04:18:24Z",
+    "username": "service_backup",
+    "source_ip": "192.0.2.201",
+    "host": "server-04",
+    "event_type": "file_access",
+    "severity_hint": "critical",
+    "details": {
+      "file_path": "C:\\Windows\\NTDS\\ntds_shard_2.dit",
+      "action": "volume_shadow_copy_read"
+    },
+    "ground_truth": "suspicious",
+    "label_reason": "Active Directory NTDS database extraction attempt via VSS shadow copy."
+  },
+  {
+    "event_id": "EVT0156",
+    "scenario_id": "SCN023",
+    "timestamp": "2026-10-22T04:18:36Z",
+    "username": "service_backup",
+    "source_ip": "192.0.2.201",
+    "host": "server-04",
+    "event_type": "file_access",
+    "severity_hint": "critical",
+    "details": {
+      "file_path": "C:\\Windows\\NTDS\\ntds_shard_3.dit",
+      "action": "volume_shadow_copy_read"
+    },
+    "ground_truth": "suspicious",
+    "label_reason": "Active Directory NTDS database extraction attempt via VSS shadow copy."
+  },
+  {
+    "event_id": "EVT0157",
+    "scenario_id": "SCN023",
+    "timestamp": "2026-10-22T04:18:48Z",
+    "username": "service_backup",
+    "source_ip": "192.0.2.201",
+    "host": "server-04",
+    "event_type": "file_access",
+    "severity_hint": "critical",
+    "details": {
+      "file_path": "C:\\Windows\\NTDS\\ntds_shard_4.dit",
+      "action": "volume_shadow_copy_read"
+    },
+    "ground_truth": "suspicious",
+    "label_reason": "Active Directory NTDS database extraction attempt via VSS shadow copy."
+  },
+  {
+    "event_id": "EVT0158",
+    "scenario_id": "SCN024",
+    "timestamp": "2026-10-22T05:00:15Z",
+    "username": "local_daemon",
+    "source_ip": "192.0.2.66",
+    "host": "workstation-06",
+    "event_type": "dns_query",
+    "severity_hint": "high",
+    "details": {
+      "query_name": "a8f7c9e102bc45d0.tunnel.c2-dns.test",
+      "query_type": "TXT",
+      "response_bytes": 512,
+      "entropy": 4.88
+    },
+    "ground_truth": "suspicious",
+    "label_reason": "High-frequency high-entropy DNS TXT queries characteristic of DNS covert tunneling channel."
+  },
+  {
+    "event_id": "EVT0159",
+    "scenario_id": "SCN024",
+    "timestamp": "2026-10-22T05:01:15Z",
+    "username": "local_daemon",
+    "source_ip": "192.0.2.66",
+    "host": "workstation-06",
+    "event_type": "dns_query",
+    "severity_hint": "high",
+    "details": {
+      "query_name": "a8f7c9e102bc45d1.tunnel.c2-dns.test",
+      "query_type": "TXT",
+      "response_bytes": 512,
+      "entropy": 4.88
+    },
+    "ground_truth": "suspicious",
+    "label_reason": "High-frequency high-entropy DNS TXT queries characteristic of DNS covert tunneling channel."
+  },
+  {
+    "event_id": "EVT0160",
+    "scenario_id": "SCN024",
+    "timestamp": "2026-10-22T05:02:15Z",
+    "username": "local_daemon",
+    "source_ip": "192.0.2.66",
+    "host": "workstation-06",
+    "event_type": "dns_query",
+    "severity_hint": "high",
+    "details": {
+      "query_name": "a8f7c9e102bc45d2.tunnel.c2-dns.test",
+      "query_type": "TXT",
+      "response_bytes": 512,
+      "entropy": 4.88
+    },
+    "ground_truth": "suspicious",
+    "label_reason": "High-frequency high-entropy DNS TXT queries characteristic of DNS covert tunneling channel."
+  },
+  {
+    "event_id": "EVT0161",
+    "scenario_id": "SCN024",
+    "timestamp": "2026-10-22T05:03:15Z",
+    "username": "local_daemon",
+    "source_ip": "192.0.2.66",
+    "host": "workstation-06",
+    "event_type": "dns_query",
+    "severity_hint": "high",
+    "details": {
+      "query_name": "a8f7c9e102bc45d3.tunnel.c2-dns.test",
+      "query_type": "TXT",
+      "response_bytes": 512,
+      "entropy": 4.88
+    },
+    "ground_truth": "suspicious",
+    "label_reason": "High-frequency high-entropy DNS TXT queries characteristic of DNS covert tunneling channel."
+  },
+  {
+    "event_id": "EVT0162",
+    "scenario_id": "SCN024",
+    "timestamp": "2026-10-22T05:04:15Z",
+    "username": "local_daemon",
+    "source_ip": "192.0.2.66",
+    "host": "workstation-06",
+    "event_type": "dns_query",
+    "severity_hint": "high",
+    "details": {
+      "query_name": "a8f7c9e102bc45d4.tunnel.c2-dns.test",
+      "query_type": "TXT",
+      "response_bytes": 512,
+      "entropy": 4.88
+    },
+    "ground_truth": "suspicious",
+    "label_reason": "High-frequency high-entropy DNS TXT queries characteristic of DNS covert tunneling channel."
+  },
+  {
+    "event_id": "EVT0163",
+    "scenario_id": "SCN024",
+    "timestamp": "2026-10-22T05:05:15Z",
+    "username": "local_daemon",
+    "source_ip": "192.0.2.66",
+    "host": "workstation-06",
+    "event_type": "dns_query",
+    "severity_hint": "high",
+    "details": {
+      "query_name": "a8f7c9e102bc45d5.tunnel.c2-dns.test",
+      "query_type": "TXT",
+      "response_bytes": 512,
+      "entropy": 4.88
+    },
+    "ground_truth": "suspicious",
+    "label_reason": "High-frequency high-entropy DNS TXT queries characteristic of DNS covert tunneling channel."
+  },
+  {
+    "event_id": "EVT0164",
+    "scenario_id": "SCN025",
+    "timestamp": "2026-10-22T06:00:00Z",
+    "username": "zara",
+    "source_ip": "192.0.2.140",
+    "host": "workstation-11",
+    "event_type": "login_success",
+    "severity_hint": "info",
+    "details": {
+      "geo_location": "New York, US",
+      "mfa_verified": true
+    },
+    "ground_truth": "suspicious",
+    "label_reason": "First legitimate authenticated login event in geographic cluster A."
+  },
+  {
+    "event_id": "EVT0165",
+    "scenario_id": "SCN025",
+    "timestamp": "2026-10-22T06:04:30Z",
+    "username": "zara",
+    "source_ip": "203.0.113.190",
+    "host": "web-portal-01",
+    "event_type": "login_success",
+    "severity_hint": "critical",
+    "details": {
+      "geo_location": "Tokyo, JP",
+      "distance_km": 10850,
+      "delta_minutes": 4.5
+    },
+    "ground_truth": "suspicious",
+    "label_reason": "Physically impossible geographic travel interval between concurrent successful authentication sessions."
+  },
+  {
+    "event_id": "EVT0166",
+    "scenario_id": "SCN025",
+    "timestamp": "2026-10-22T06:05:10Z",
+    "username": "zara",
+    "source_ip": "203.0.113.190",
+    "host": "web-portal-01",
+    "event_type": "file_access",
+    "severity_hint": "high",
+    "details": {
+      "file_path": "/portal/customer_database_slice_0.csv",
+      "action": "download"
+    },
+    "ground_truth": "suspicious",
+    "label_reason": "Data acquisition initiated from impossible-travel authenticated web session."
+  },
+  {
+    "event_id": "EVT0167",
+    "scenario_id": "SCN025",
+    "timestamp": "2026-10-22T06:06:10Z",
+    "username": "zara",
+    "source_ip": "203.0.113.190",
+    "host": "web-portal-01",
+    "event_type": "file_access",
+    "severity_hint": "high",
+    "details": {
+      "file_path": "/portal/customer_database_slice_1.csv",
+      "action": "download"
+    },
+    "ground_truth": "suspicious",
+    "label_reason": "Data acquisition initiated from impossible-travel authenticated web session."
+  },
+  {
+    "event_id": "EVT0168",
+    "scenario_id": "SCN025",
+    "timestamp": "2026-10-22T06:07:10Z",
+    "username": "zara",
+    "source_ip": "203.0.113.190",
+    "host": "web-portal-01",
+    "event_type": "file_access",
+    "severity_hint": "high",
+    "details": {
+      "file_path": "/portal/customer_database_slice_2.csv",
+      "action": "download"
+    },
+    "ground_truth": "suspicious",
+    "label_reason": "Data acquisition initiated from impossible-travel authenticated web session."
+  },
+  {
+    "event_id": "EVT0169",
+    "scenario_id": "SCN026",
+    "timestamp": "2026-10-22T07:00:00Z",
+    "username": "targeted_exec",
+    "source_ip": "198.51.100.99",
+    "host": "auth-gateway-01",
+    "event_type": "login_failed",
+    "severity_hint": "medium",
+    "details": {
+      "attempt_count": 1,
+      "lockout_threshold": 5,
+      "reason": "invalid_password"
+    },
+    "ground_truth": "suspicious",
+    "label_reason": "Low-and-slow authentication brute-force attempt engineered to stay under account lockout threshold."
+  },
+  {
+    "event_id": "EVT0170",
+    "scenario_id": "SCN026",
+    "timestamp": "2026-10-22T07:01:00Z",
+    "username": "targeted_exec",
+    "source_ip": "198.51.100.99",
+    "host": "auth-gateway-01",
+    "event_type": "login_failed",
+    "severity_hint": "medium",
+    "details": {
+      "attempt_count": 2,
+      "lockout_threshold": 5,
+      "reason": "invalid_password"
+    },
+    "ground_truth": "suspicious",
+    "label_reason": "Low-and-slow authentication brute-force attempt engineered to stay under account lockout threshold."
+  },
+  {
+    "event_id": "EVT0171",
+    "scenario_id": "SCN026",
+    "timestamp": "2026-10-22T07:02:00Z",
+    "username": "targeted_exec",
+    "source_ip": "198.51.100.99",
+    "host": "auth-gateway-01",
+    "event_type": "login_failed",
+    "severity_hint": "medium",
+    "details": {
+      "attempt_count": 3,
+      "lockout_threshold": 5,
+      "reason": "invalid_password"
+    },
+    "ground_truth": "suspicious",
+    "label_reason": "Low-and-slow authentication brute-force attempt engineered to stay under account lockout threshold."
+  },
+  {
+    "event_id": "EVT0172",
+    "scenario_id": "SCN026",
+    "timestamp": "2026-10-22T07:03:00Z",
+    "username": "targeted_exec",
+    "source_ip": "198.51.100.99",
+    "host": "auth-gateway-01",
+    "event_type": "login_failed",
+    "severity_hint": "medium",
+    "details": {
+      "attempt_count": 4,
+      "lockout_threshold": 5,
+      "reason": "invalid_password"
+    },
+    "ground_truth": "suspicious",
+    "label_reason": "Low-and-slow authentication brute-force attempt engineered to stay under account lockout threshold."
+  },
+  {
+    "event_id": "EVT0173",
+    "scenario_id": "SCN026",
+    "timestamp": "2026-10-22T07:35:00Z",
+    "username": "targeted_exec",
+    "source_ip": "198.51.100.99",
+    "host": "auth-gateway-01",
+    "event_type": "application_log",
+    "severity_hint": "info",
+    "details": {
+      "message": "Reset window interval observed; attacker resume cycle"
+    },
+    "ground_truth": "suspicious",
+    "label_reason": "Attacker intentional delay matching domain lockout observation window."
+  },
+  {
+    "event_id": "EVT0174",
+    "scenario_id": "SCN026",
+    "timestamp": "2026-10-22T07:36:00Z",
+    "username": "targeted_exec",
+    "source_ip": "198.51.100.99",
+    "host": "auth-gateway-01",
+    "event_type": "login_failed",
+    "severity_hint": "high",
+    "details": {
+      "attempt_count": 1,
+      "lockout_threshold": 5,
+      "cycle": 2
+    },
+    "ground_truth": "suspicious",
+    "label_reason": "Second phase threshold-evasion password guessing attempts."
+  },
+  {
+    "event_id": "EVT0175",
+    "scenario_id": "SCN026",
+    "timestamp": "2026-10-22T07:37:00Z",
+    "username": "targeted_exec",
+    "source_ip": "198.51.100.99",
+    "host": "auth-gateway-01",
+    "event_type": "login_failed",
+    "severity_hint": "high",
+    "details": {
+      "attempt_count": 2,
+      "lockout_threshold": 5,
+      "cycle": 2
+    },
+    "ground_truth": "suspicious",
+    "label_reason": "Second phase threshold-evasion password guessing attempts."
+  },
+  {
+    "event_id": "EVT0176",
+    "scenario_id": "SCN026",
+    "timestamp": "2026-10-22T07:38:00Z",
+    "username": "targeted_exec",
+    "source_ip": "198.51.100.99",
+    "host": "auth-gateway-01",
+    "event_type": "login_failed",
+    "severity_hint": "high",
+    "details": {
+      "attempt_count": 3,
+      "lockout_threshold": 5,
+      "cycle": 2
+    },
+    "ground_truth": "suspicious",
+    "label_reason": "Second phase threshold-evasion password guessing attempts."
+  },
+  {
+    "event_id": "EVT0177",
+    "scenario_id": "SCN026",
+    "timestamp": "2026-10-22T07:39:00Z",
+    "username": "targeted_exec",
+    "source_ip": "198.51.100.99",
+    "host": "auth-gateway-01",
+    "event_type": "login_failed",
+    "severity_hint": "high",
+    "details": {
+      "attempt_count": 4,
+      "lockout_threshold": 5,
+      "cycle": 2
+    },
+    "ground_truth": "suspicious",
+    "label_reason": "Second phase threshold-evasion password guessing attempts."
+  }
+]

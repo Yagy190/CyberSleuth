@@ -1,0 +1,122 @@
+[
+  {
+    "test_id": "RAG_TC_001",
+    "relevant_chunk_ids": ["mitre_t1110_overview", "mitre_t1110_001_detail"],
+    "relevant_chunk_titles": ["Brute Force - T1110", "Password Guessing - T1110.001"],
+    "relevance_scores": [3, 3]
+  },
+  {
+    "test_id": "RAG_TC_002",
+    "relevant_chunk_ids": ["mitre_t1110_001_detail", "mitre_t1110_003_detail"],
+    "relevant_chunk_titles": ["Password Guessing - T1110.001", "Password Spraying - T1110.003"],
+    "relevance_scores": [3, 2]
+  },
+  {
+    "test_id": "RAG_TC_003",
+    "relevant_chunk_ids": ["mitre_t1548_overview", "mitre_t1078_003_detail"],
+    "relevant_chunk_titles": ["Abuse Elevation Control - T1548", "Local Accounts - T1078.003"],
+    "relevance_scores": [3, 2]
+  },
+  {
+    "test_id": "RAG_TC_004",
+    "relevant_chunk_ids": ["mitre_t1021_overview", "mitre_t1021_001_rdp"],
+    "relevant_chunk_titles": ["Remote Services - T1021", "Remote Desktop Protocol - T1021.001"],
+    "relevance_scores": [3, 3]
+  },
+  {
+    "test_id": "RAG_TC_005",
+    "relevant_chunk_ids": ["mitre_t1071_overview", "mitre_t1071_004_dns"],
+    "relevant_chunk_titles": ["Application Layer Protocol - T1071", "DNS Tunneling - T1071.004"],
+    "relevance_scores": [3, 3]
+  },
+  {
+    "test_id": "RAG_TC_006",
+    "relevant_chunk_ids": ["mitre_t1041_overview", "mitre_t1567_web_exfil"],
+    "relevant_chunk_titles": ["Exfiltration Over C2 - T1041", "Exfiltration Over Web - T1567"],
+    "relevance_scores": [3, 2]
+  },
+  {
+    "test_id": "RAG_TC_007",
+    "relevant_chunk_ids": ["mitre_t1003_overview", "mitre_t1003_003_ntds"],
+    "relevant_chunk_titles": ["OS Credential Dumping - T1003", "NTDS.dit Extraction - T1003.003"],
+    "relevance_scores": [3, 3]
+  },
+  {
+    "test_id": "RAG_TC_008",
+    "relevant_chunk_ids": ["mitre_t1070_overview", "mitre_t1070_001_clear_logs"],
+    "relevant_chunk_titles": ["Indicator Removal - T1070", "Clear Event Logs - T1070.001"],
+    "relevance_scores": [3, 3]
+  },
+  {
+    "test_id": "RAG_TC_009",
+    "relevant_chunk_ids": ["playbook_credential_stuffing_containment", "mitre_t1110_004_detail"],
+    "relevant_chunk_titles": ["SOC IR Playbook: Credential Stuffing", "Credential Stuffing - T1110.004"],
+    "relevance_scores": [3, 2]
+  },
+  {
+    "test_id": "RAG_TC_010",
+    "relevant_chunk_ids": ["playbook_lateral_movement_containment", "mitre_t1021_overview"],
+    "relevant_chunk_titles": ["SOC IR Playbook: Lateral Movement Containment", "Remote Services - T1021"],
+    "relevance_scores": [3, 2]
+  },
+  {
+    "test_id": "RAG_TC_011",
+    "relevant_chunk_ids": ["playbook_unauthorized_privilege_escalation", "mitre_t1548_overview"],
+    "relevant_chunk_titles": ["SOC IR Playbook: Privilege Escalation", "Abuse Elevation Control - T1548"],
+    "relevance_scores": [3, 2]
+  },
+  {
+    "test_id": "RAG_TC_012",
+    "relevant_chunk_ids": ["playbook_data_exfiltration_containment", "mitre_t1041_overview"],
+    "relevant_chunk_titles": ["SOC IR Playbook: Active Exfiltration Egress", "Exfiltration Over C2 - T1041"],
+    "relevance_scores": [3, 3]
+  },
+  {
+    "test_id": "RAG_TC_013",
+    "relevant_chunk_ids": ["playbook_impossible_travel_verification", "mitre_t1078_overview"],
+    "relevant_chunk_titles": ["SOC IR Playbook: Impossible Travel Triage", "Valid Accounts - T1078"],
+    "relevance_scores": [3, 2]
+  },
+  {
+    "test_id": "RAG_TC_014",
+    "relevant_chunk_ids": ["mitre_t1110_overview", "detection_guidance_event4625"],
+    "relevant_chunk_titles": ["Brute Force - T1110", "SIEM Detection Rule: Windows 4625 Spikes"],
+    "relevance_scores": [3, 2]
+  },
+  {
+    "test_id": "RAG_TC_015",
+    "relevant_chunk_ids": ["mitre_t1071_004_dns", "detection_guidance_dns_entropy"],
+    "relevant_chunk_titles": ["DNS Tunneling - T1071.004", "SIEM Detection Rule: DNS Shannon Entropy Analysis"],
+    "relevance_scores": [3, 3]
+  },
+  {
+    "test_id": "RAG_TC_016",
+    "relevant_chunk_ids": ["detection_guidance_usb_mounting", "mitre_t1070_overview"],
+    "relevant_chunk_titles": ["SIEM Detection Rule: Removable Storage Auditing", "Indicator Removal - T1070"],
+    "relevance_scores": [3, 2]
+  },
+  {
+    "test_id": "RAG_TC_017",
+    "relevant_chunk_ids": ["detection_guidance_service_account_logon", "mitre_t1078_001_detail"],
+    "relevant_chunk_titles": ["SIEM Detection Rule: Service Account Interactive Logons", "Default Accounts - T1078.001"],
+    "relevance_scores": [3, 3]
+  },
+  {
+    "test_id": "RAG_TC_018",
+    "relevant_chunk_ids": ["mitre_t1110_overview", "mitigation_mfa_rate_limiting"],
+    "relevant_chunk_titles": ["Brute Force - T1110", "Mitigation Guide: Enterprise MFA & IP Rate Limiting"],
+    "relevance_scores": [3, 3]
+  },
+  {
+    "test_id": "RAG_TC_019",
+    "relevant_chunk_ids": ["mitre_t1021_overview", "mitigation_network_segmentation"],
+    "relevant_chunk_titles": ["Remote Services - T1021", "Mitigation Guide: Microsegmentation & Host Firewalls"],
+    "relevance_scores": [3, 3]
+  },
+  {
+    "test_id": "RAG_TC_020",
+    "relevant_chunk_ids": ["mitre_t1003_003_ntds", "mitigation_active_directory_tiering"],
+    "relevant_chunk_titles": ["NTDS.dit Extraction - T1003.003", "Mitigation Guide: Active Directory Tier 0 Hardening"],
+    "relevance_scores": [3, 3]
+  }
+]
